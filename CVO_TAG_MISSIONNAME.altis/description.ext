@@ -1,0 +1,85 @@
+// #### Mission Information
+// https://community.bistudio.com/wiki/Description.ext
+
+class Header
+{
+	gameType = "Coop";	// game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 20;	// maximum number of players the mission supports
+};
+
+author = "Someone [CVO]";
+
+onLoadName = "CVO Mission Title";                       // Loading Screen: Mission Title
+onLoadMission = "If you walk alone, you die alone";     // Loading Screen: Mission Description, short
+
+loadScreen = "data\loadScreen_cvo_default.paa";
+
+overviewPicture = "data\loadScreen_cvo_default.paa"; // The picture displayed in the mission selection screen
+
+briefingName = "Operation Some Thing"; // The Mission name with operation displayed in the mission selection men
+overviewText = "Description of the mission here"; // The text above the picture in the mission selection menu
+
+
+
+// ###### Default Stuff - Dont Touch unless really needed
+allowFunctionsLog = 1;
+enableDebugConsole = 1;
+cba_settings_hasSettingsFile = 1;
+
+
+// ###### Disable Global and SideChat
+// https://community.bistudio.com/wiki/Description.ext#disableChannels
+disableChannels[] =
+{
+	// Ch.ID, Disable Text, Disable Voice, Disable Map Markers, Disable Draw on Map
+	{ 0, true, true, false, false }, // Global
+	{ 1, true, true, false, false }, // Side
+	{ 1, true, true, false, false }, // Command
+	{ 1, false, true, false, false }, // Group
+	{ 1, false, true, false, false }, // Vehicle
+	{ 1, false, true, false, false }  // Direct
+};
+
+
+// ###### AI Stuff 
+aiKills = 0; // Does not add AI to the scoreboard
+disabledAI = 1;
+
+
+// ###### Respawn Settings - CVO Defaults
+// https://community.bistudio.com/wiki/Arma_3:_Respawn
+// https://community.bistudio.com/wiki/Description.ext#Respawn/Revive
+
+// ### Respawn Settings for Events with normal respawn
+// respawn = 3;
+// respawnTemplates[] = {"Counter", "Wave", "ace_spectator"};
+// respawnDelay = 120;
+
+// ### Respawn Settings for Events with 1-life
+// respawn = 3;
+// respawnTemplates[] = { "ace_spectator"};
+// respawnDelay = 99999;
+
+
+respawnTemplates[] = {"Counter", "Wave", "ace_spectator"};
+respawn = 3;
+
+respawnDelay = 120;
+respawnVehicleDelay = 99999;
+
+respawnOnStart = 0;
+respawnDialog = 0;
+respawnButton = 0; // Enables the respawn button in the ESC menu
+
+
+// ###### Cfg Functions - https://community.bistudio.com/wiki/CfgFunctions
+#include "CfgFunctions.hpp"
+
+
+// ###### CVO Defines
+#include "cvo_defines\cvo_arsenal_kits.hpp"
+#include "cvo_defines\cvo_csc_presets.hpp"
+
+// ###### Other Includes
+

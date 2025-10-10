@@ -13,7 +13,7 @@ class CfgFunctions {
         };
         class common // Category
         {
-            // class example {};
+            class pointAt {};
         };
         class shack // Category
         {

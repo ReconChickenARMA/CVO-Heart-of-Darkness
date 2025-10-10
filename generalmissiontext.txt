@@ -54,3 +54,5 @@ Mission Flow with Technical Notes
 11a. Place smoke, fire, soldiers at checkpoint to the north of Sinampande 
 12. Players arive at the safehouse
 12a. Wait for a few seconds, then play the mission complete screen
+
+Numerical points are mission flow, letter points are technical notes.

@@ -21,9 +21,9 @@ private _posTarget = missionNamespace getVariable "Shack_Lighttarget_POSASL";
 
 private _codeToRun = {
     params ["_posStart", "_posTarget"];
-    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.2 * selectRandom [-1,1] ] ], 1 + random 0.25 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
-    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.2 * selectRandom [-1,1] ] ], 2 + random 0.25 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
-    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.2 * selectRandom [-1,1] ] ], 3 + random 0.25 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
+    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.1 * selectRandom [-1,1] ] ], 1 + random 0.15 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
+    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.1 * selectRandom [-1,1] ] ], 2 + random 0.15 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
+    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.1 * selectRandom [-1,1] ] ], 3 + random 0.15 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
 };
 
 private _parameters = [ _posStart, _posTarget ];

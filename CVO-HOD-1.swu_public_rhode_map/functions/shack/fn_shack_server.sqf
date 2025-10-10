@@ -18,7 +18,7 @@
 private _backpacks = ["gm_dshkm_weaponBag", "gm_gc_army_backpack_80_at_empty_str", "gm_dshkm_aatripod_weaponBag", "gm_fagot_launcher_weaponBag"];
 private _launchers = ["gm_rpg7_prp"];
 
-["shack_after", "HIDE_OFF", 0] call cvo_common_fnc_layerObjects;
+["shack_after", "HIDE_OFF"] call cvo_common_fnc_layerObjects;
 
 private _players = [] call CBA_fnc_players;
 

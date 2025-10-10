@@ -13,23 +13,27 @@
 * Public: No
 */
 
-if !(isServer) exitWith {};
+if (!isServer) exitWith {};
 
-private _posStart = missionNamespace getVariable "Shack_Lightsource_POSASL";
-private _posTarget = missionNamespace getVariable "Shack_Lighttarget_POSASL";
+private _lightPOS = missionNamespace getVariable "Shack_Lightsource_POS";
+private _targetPOS = missionNamespace getVariable "Shack_Lighttarget_POS";
 
 
 private _codeToRun = {
-    params ["_posStart", "_posTarget"];
-    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.1 * selectRandom [-1,1] ] ], 1 + random 0.15 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
-    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.1 * selectRandom [-1,1] ] ], 2 + random 0.15 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
-    [ CBA_fnc_globalEvent, ["shack_lightEffect", [_posStart, _posTarget, 0.5 + random 0.1 * selectRandom [-1,1] ] ], 3 + random 0.15 * selectRandom [-1,1] ] call CBA_fnc_waitAndExecute;
+    params ["_lightPOS", "_targetPOS"];
+    private _totalDelay = 1;
+
+    for "_i" from 1 to selectRandom [1,2,3,3,3,3,3,4,5]  do {
+        private _duration = 0.5 + random 0.15 * selectRandom [-1,1];
+        [ CBA_fnc_globalEvent, [ "shack_lightEffect", [_lightPOS, _targetPOS, _duration ] ], _totalDelay ] call CBA_fnc_waitAndExecute;
+        _totalDelay = _totalDelay + _duration * 2;
+    };
 };
 
-private _parameters = [ _posStart, _posTarget ];
+private _parameters = [ _lightPOS, _targetPOS ];
 private _exitCode = { /* exit code */ };
 private _condition = { isNil "trigger_shack_stopLight" };
-private _delay = 15;
+private _delay = 5;
 
 [{
     params ["_args", "_handle"];
@@ -41,4 +45,5 @@ private _delay = 15;
         _handle call CBA_fnc_removePerFrameHandler;
         _parameters call _exitCode;
     };
-}, _delay, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler;
+}, _delay, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler; 
+

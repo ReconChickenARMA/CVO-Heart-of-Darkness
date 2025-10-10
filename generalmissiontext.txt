@@ -1,0 +1,31 @@
+gm_dshkm_weaponBag
+gm_gc_army_backpack_80_at_empty_str
+gm_dshkm_aatripod_weaponBag
+gm_fagot_launcher_weaponBag
+gm_rpg7_prp
+
+Intro Cutscene Text
+In 1974, the colonial government of Bocano collapsed with the fall of the Estado Novo.
+
+In the power vacuum that followed, factions of the former resistance fractured, forming two militias, the MPLB and the UPB, to settle their differences.
+
+The eyes of the world fell on Mutambara, and various countries began to provide support, both public and covert, to the combatants.
+
+You are a group bringing arms from the DDR to the UPB, to aid in their fight against the MPLB in the Mutambara region of Bucano.
+
+Your team is made up of military intelligence officers, infantry, and ideological volunteers from foreign countries.
+
+Your mission is to deliver the equipment to a cache established by our allies. Once complete, begin to integrate yourselves into the militia, providing technical and in field support, and providing field reports to High Command.
+
+Good Luck.....
+
+CROWS
+
+Stash Cutscene Text
+
+You unload your burden, and gather yourselves for what comes next...
+
+
+
+
+

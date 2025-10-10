@@ -29,7 +29,7 @@ _lightSource setLightAmbient [1, 0, 0]; // sets the colour applied to the surrou
 
 _lightSource setLightUseFlare true;
 _lightSource setLightFlareSize 0.1; // in metre
-_lightSource setLightFlareMaxDistance ( _distance * 1.2 ); // in metre
+_lightSource setLightFlareMaxDistance ( _distance * 1.5 ); // in metre
 
 _lightSource setLightIntensity 3000;
 

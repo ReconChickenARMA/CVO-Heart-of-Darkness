@@ -1,0 +1,29 @@
+/*
+* Author: Zorn
+* Function to setup intel items
+*
+* Arguments:
+*
+* Return Value:
+* None
+*
+* Example:
+* ['something', player] call prefix_component_fnc_functionname
+*
+* Public: No
+*/
+
+// intel_1_church
+
+private _structuredString = "
+<br/>You found a handwritten note at the door of the chruch:
+<br/><font size='23' color='#ff000d' face='EraserRegular'>The red light will lead your way...</font>
+";
+
+[
+    intel_1_church,                 // Object
+    "Note from the church",         // Intel Title
+    _structuredString,              // Intel Content (Structured Text as STRING)
+    "Church",                       // Intel Group, nil for Default Group (Optional, nil for Default Group: "General")
+    true                            // Remove Object once Picked up - (Optional - Default: true)
+] call cvo_intel_fnc_createIntel;

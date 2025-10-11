@@ -21,6 +21,7 @@
     ,["Text", "The eyes of the world fell on Bocano, and various countries began to provide support, both public and covert, to the combatants."]
     ,["Text", "You are a group bringing arms from the DDR to the UPB, to aid in their fight against the MPLB in the Mutambara region of Bocano."]
     ,["Text", "Your mission is to deliver the equipment to a cache established by our allies. Once complete, begin to integrate yourselves into the militia, providing technical and in field support, and providing field reports to High Command."]
+    ,["CODE", { missionNamespace setVariable ["intro_moveUnitsIntoVehicle", true, true]; }]
     ,["Text", "Good Luck....."]
     ,["DELAY", 3]
     ,["RAVEN", 15]

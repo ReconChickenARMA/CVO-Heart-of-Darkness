@@ -27,7 +27,8 @@ private _aceAction = [
     ,"Deliver Weapons and Equipment"                       //  * 1: Name of the action shown in the menu <STRING>
     ,"\A3\ui_f\data\igui\cfg\simpleTasks\types\backpack_ca.paa"        //  * 2: Icon <STRING> 
     ,_state                                 //  * 3: Statement <CODE>
-    ,{ isNil "trigger_shack_setup" }        //  * 4: Condition <CODE>
+    ,{ isNil "trigger_shack_setup" && { isNull intel_1_chruch } }
+                                            //  * 4: Condition <CODE>
     ,{}                                     //  * 5: Insert children code <CODE> (Optional)
     ,[]                                     //  * 6: Action parameters <ANY> (Optional)
     ,[0,0,0]                                //  * 7: Position (Position array, Position code or Selection Name) <ARRAY>, <CODE> or <STRING> (Optional)

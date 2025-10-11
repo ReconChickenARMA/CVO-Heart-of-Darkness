@@ -34,3 +34,19 @@ if (true) exitWith {};
 
 // intro_truck_start
 // intro_whiteboard
+
+[
+    {
+        !isNil "hostage_player_nearby"
+    },
+    {
+        // Add multiple wounds to hostage
+        // Add broken Legs
+        _statement
+    },
+    _parameter,
+    _timeout,
+    {
+        _timeoutCode
+    }
+] call CBA_fnc_waitUntilAndExecute;

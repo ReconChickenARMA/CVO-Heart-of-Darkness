@@ -29,3 +29,30 @@ You unload your burden, and gather yourselves for what comes next...
 
 
 
+Mission Flow with Technical Notes
+
+1. Players start in a truck driving into Mutambara
+1a. Cutscene transitioning into a moving vehicle
+2.Truck breaks down on the road
+2a. Truck makes breaking noise, smokes, stops.
+3. Players continue to their intended destination on foot 
+3a. Civilian car drives down the road, and brings the driver of the infil truck back to town for help
+4. Players find note about cache, look for the light 
+4a. Light source is working as intended 
+5. Players hike to the light source, through a sleeping village possibly
+5a. Place livestock in town when players get near, if they are placed too early they wander away.
+6. Players find cache and deliver equipment 
+6a. ACE action is placed, but doesn't seem to be triggering the cutscene?
+7. Cache guards ask the players to rescue their comrade from patrol base Hondo, and bring him to a safehouse in Siwaza
+7a. Place map markers for Patrol Base, Stashed Truck, and Safehouse
+8. Players hike to near Patrol Base Hondo, and a convoy leaves to assist a roadblock under attack.
+8a. Make a trigger that starts the firefight at the roadblock, then a second one like a minute later to send the convoy out. 
+9. Players sneak into the patrol base, neutralizing the small garrison.
+10. PLayers extract with hostage out towards a hidden truck in Sinampande
+10a. Have a pair of soldiers patrol the town.
+11. Players leave town, headed for Siwaza
+11a. Place smoke, fire, soldiers at checkpoint to the north of Sinampande 
+12. Players arive at the safehouse
+12a. Wait for a few seconds, then play the mission complete screen
+
+Numerical points are mission flow, letter points are technical notes.

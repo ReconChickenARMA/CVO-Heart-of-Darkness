@@ -16,3 +16,18 @@ if (true) exitWith {};
     }
 ] call CBA_fnc_waitUntilAndExecute;
 
+
+
+[
+    {
+        _condition
+    },
+    {
+        _statement
+    },
+    _parameter,
+    _timeout,
+    {
+        _timeoutCode
+    }
+] call CBA_fnc_waitUntilAndExecute;

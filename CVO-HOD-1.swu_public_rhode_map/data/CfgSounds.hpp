@@ -6,10 +6,12 @@ class CfgSounds
 	{
 		name = "brokenFridge";						// display name
 		sound[] = { "data\broken-fridge.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+        titles[] = {}; // no subtitles
 	};
 	class failedStart
 	{
-		name = "brokenFridge";						// display name
-		sound[] = { "data\broken-fridge.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+		name = "failed_start";						// display name
+		sound[] = { "data\failed_start.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+        titles[] = {}; // no subtitles
 	};
 };

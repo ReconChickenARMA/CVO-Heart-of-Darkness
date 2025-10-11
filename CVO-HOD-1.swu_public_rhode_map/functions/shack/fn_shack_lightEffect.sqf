@@ -31,7 +31,7 @@ if (_targetPOS isEqualTo [0,0,0]) then { private _str = format ['[CVO](debug)(fn
 private _distance = _lightPOS distance _targetPOS;
 
 private _lightSource = "#lightreflector" createVehicleLocal _lightPOS;
-[_lightSource, _targetPOS] call mission_fnc_pointAt;
+[_lightSource, _targetPOS] call CVO_COMMON_fnc_pointAt;
 
 _lightSource setLightColor [1, 0, 0];
 _lightSource setLightAmbient [1, 0, 0]; // sets the colour applied to the surroundings
@@ -40,7 +40,7 @@ _lightSource setLightUseFlare true;
 _lightSource setLightFlareSize 0.5; // in metre
 _lightSource setLightFlareMaxDistance ( _distance * 2 ); // in metre
 
-_lightSource setLightIntensity 3000;
+_lightSource setLightIntensity 6000;
 
 _lightSource setLightDayLight true; // only for the light itself, not the flare
 

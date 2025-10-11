@@ -1,6 +1,3 @@
-
-
-
 private _state = {
 
     params ["_target", "_player", "_params"];
@@ -12,7 +9,7 @@ private _state = {
         20                                          // * 0: Total Time (in game "time" seconds) <NUMBER>
         ,[]                                         // * 1: Arguments, passed to condition, fail and finish <ARRAY>
                                                     // * 2: On Finish: Code called or STRING raised as event. <CODE, STRING>
-        ,{ missionNamespace setVariable ["trigger_shack_setup", true, true]; }
+        ,{ missionNamespace setVariable ["trigger_shack_cutscene", true, true]; }
         ,{}   
         ,"Delivering Weapons and Equipment..."                                         // * 4: Localized Title <STRING> (default: "")
         ,{ isNil "trigger_shack_setup" }            // * 5: Code to check each frame <CODE> (default: {true})
@@ -23,17 +20,17 @@ private _state = {
 };
 
 private _aceAction = [
-    "My_Action_ID_Name"                     // * 0: Action name <STRING>
+    "ACE_MainActions"                     // * 0: Action name <STRING>
     ,"Deliver Weapons and Equipment"                       //  * 1: Name of the action shown in the menu <STRING>
     ,"\A3\ui_f\data\igui\cfg\simpleTasks\types\backpack_ca.paa"        //  * 2: Icon <STRING> 
     ,_state                                 //  * 3: Statement <CODE>
-    ,{ isNil "trigger_shack_setup" && { isNull intel_1_chruch } }
+    ,{ isNil "trigger_shack_setup" && { isNull intel_1_church } }
                                             //  * 4: Condition <CODE>
     ,{}                                     //  * 5: Insert children code <CODE> (Optional)
     ,[]                                     //  * 6: Action parameters <ANY> (Optional)
-    ,[0,0,0]                                //  * 7: Position (Position array, Position code or Selection Name) <ARRAY>, <CODE> or <STRING> (Optional)
-    ,20                                     //  * 8: Distance <NUMBER> (Optional)
-    ,[false,false,false,false,true]      //  * 9: Other parameters [showDisabled,enableInside,canCollapse,runOnHover,doNotCheckLOS] <ARRAY> (Optional)
+    ,[-0.6,-0.4,2]                          //  * 7: Position (Position array, Position code or Selection Name) <ARRAY>, <CODE> or <STRING> (Optional)
+    ,10                                     //  * 8: Distance <NUMBER> (Optional)
+    ,[false,false,false,false,true]          //  * 9: Other parameters [showDisabled,enableInside,canCollapse,runOnHover,doNotCheckLOS] <ARRAY> (Optional)
 //    ,{}                                   //  * 10: Modifier function <CODE> (Optional)
 ] call ace_interact_menu_fnc_createAction;
 
@@ -41,7 +38,7 @@ private _aceAction = [
 [
     shack_crate                    		// * 0: Object the action should be assigned to <OBJECT>
     ,0                         		    // * 1: Type of action, 0 for actions, 1 for self-actions <NUMBER>
-    ,["ACE_MainActions"]             	// * 2: Parent path of the new action <ARRAY> (Example: ["ACE_SelfActions", "ACE_Equipment"])
+    ,[]             	                // * 2: Parent path of the new action <ARRAY> (Example: ["ACE_SelfActions", "ACE_Equipment"])
     ,_aceAction    	         			// * 3: Action <ARRAY>    
 ] call ace_interact_menu_fnc_addActionToObject;
 
@@ -79,7 +76,7 @@ deleteVehicle lightsource_placeholder;
 // 2. Wait until X and run shack cutscene + setup
 [
     {
-        ! isNil "trigger_shack"
+        ! isNil "trigger_shack_cutscene"
     },
     {
         ["shack_cutscene", ""] call CBA_fnc_globalEvent;
@@ -88,4 +85,22 @@ deleteVehicle lightsource_placeholder;
             { call mission_fnc_shack_server }
         ] call CBA_fnc_waitUntilAndExecute;
     }
+] call CBA_fnc_waitUntilAndExecute;
+
+
+//Hide Markers at mission start
+private _markerNames = [
+    "marker_hostage",
+    "marker_truck_1",
+    "marker_safehouse"
+];
+
+{ _x setMarkerAlpha 0 } forEach _markerNames;
+
+
+// UnHide Markers
+[
+    { !isNil "trigger_shack_setup" },
+    { { _x setMarkerAlpha 1 } forEach _this; },
+    _markerNames
 ] call CBA_fnc_waitUntilAndExecute;

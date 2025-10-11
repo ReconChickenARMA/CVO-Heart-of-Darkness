@@ -5,15 +5,10 @@ class CfgFunctions {
 
         class init // Category
         {
-            class init_events { preInit = 1; };
-            class init_diary { preInit = 1; };
-            
             class init_babel { postInit = 1; };
+            class init_diary { preInit = 1; };
+            class init_events { preInit = 1; };
             class init_intel { postInit = 1; };
-        };
-        class common // Category
-        {
-            class pointAt {};
         };
         class shack // Category
         {
@@ -27,10 +22,12 @@ class CfgFunctions {
         };
         class intro {
             
+            class intro_cutscene {};
+            
             class intro_init { postInit = 1; };
             
-            class intro_cutscene {};
+            class intro_smokeEffect {};
+            class intro_truckBreakdown {};
         };
-        
     };
 };

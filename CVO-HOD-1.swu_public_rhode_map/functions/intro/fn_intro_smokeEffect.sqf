@@ -8,12 +8,16 @@
 * None
 *
 * Example:
-* ['something', player] call prefix_component_fnc_functionname
+* [truck] call mission_fnc_intro_smokeEffect;
 *
 * Public: No
 */
 
 params ["_truck"];
+
+
+if (!isNil "trigger_cleanup_smoke") exitWith {};
+
 
 private _posTruck = getPosATL _truck;
 
@@ -22,7 +26,7 @@ private _posTruck = getPosATL _truck;
 private _source = "#particlesource" createVehicleLocal _posTruck;
 
 // attach particle spawner
-_source attachTo [_truck, [2,0,2]];
+_source attachTo [_truck, [0,3.8,-0.7]];
 
 _source setParticleParams [
 	["\A3\Data_F\ParticleEffects\Universal\Universal", 16, 7, 16, 1], "", "Billboard",
@@ -34,11 +38,8 @@ _ps1 setDropInterval 0.05;
 
 
 // Cleanup after 
-private _code = { deleteVehicle _this };
 [
-    { ! isNil "trigger_shack_setup" },
-    _code,
-    _source,
-    30 * 60,
-    _code
+    { ! isNil "trigger_cleanup_smoke" },
+    { deleteVehicle _this },
+    _source
 ] call CBA_fnc_waitUntilAndExecute;

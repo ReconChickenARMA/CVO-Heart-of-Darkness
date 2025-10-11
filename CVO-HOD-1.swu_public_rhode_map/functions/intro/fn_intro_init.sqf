@@ -1,3 +1,7 @@
+
+// ToDo Remove
+if (true) exitWith {};
+
 [
     {
         ! isNil "intro_moveUnitsIntoVehicle"
@@ -11,3 +15,4 @@
         _timeoutCode
     }
 ] call CBA_fnc_waitUntilAndExecute;
+

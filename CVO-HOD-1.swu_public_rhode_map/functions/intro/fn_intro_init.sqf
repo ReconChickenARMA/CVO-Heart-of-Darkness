@@ -4,7 +4,7 @@ if (true) exitWith {};
 
 [
     {
-        ! isNil "intro_moveUnitsIntoVehicle"
+        ! isNil "intro_unitsIntoTruck"
     },
     {
         _statement
@@ -31,3 +31,6 @@ if (true) exitWith {};
         _timeoutCode
     }
 ] call CBA_fnc_waitUntilAndExecute;
+
+// intro_truck_start
+// intro_whiteboard

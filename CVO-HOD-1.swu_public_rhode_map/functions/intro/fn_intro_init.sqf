@@ -1,40 +1,12 @@
 
-// ToDo Remove
-if (true) exitWith {};
-
+if !(isServer) exitWith {};
 
 // WUAE to move the units into the truck.
 [
-    {
-        ! isNil "intro_unitsIntoTruck"
-    },
-    {
-        _statement
-    },
-    _parameter,
-    _timeout,
-    {
-        _timeoutCode
-    }
+    { ! isNil "intro_unitsIntoTruck" },
+    mission_fnc_intro_movePlayersIntoTruck,
+    truck
 ] call CBA_fnc_waitUntilAndExecute;
-
-
-
-[
-    {
-        _condition
-    },
-    {
-        _statement
-    },
-    _parameter,
-    _timeout,
-    {
-        _timeoutCode
-    }
-] call CBA_fnc_waitUntilAndExecute;
-
-
 
 // Will Injure the hostage when players are nearby
 [
@@ -42,7 +14,8 @@ if (true) exitWith {};
         !isNil "hostage_player_nearby"
     },
     {
-        private _unit = missionNamespace getVariable ["hostage", player]; // ToDo: update hostage variable - player as fallback is to remind the editor
+        private _unit = missionNamespace getVariable ["hostage", player];
         ["mission_addTortureDamage", _unit, _unit] call CBA_fnc_targetEvent;
     }
 ] call CBA_fnc_waitUntilAndExecute;
+

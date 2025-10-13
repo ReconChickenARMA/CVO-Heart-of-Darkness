@@ -28,6 +28,7 @@ class CfgFunctions {
             
             class intro_smokeEffect {};
             class intro_truckBreakdown {};
+            class intro_movePlayersIntoTruck {};
         };
     };
 };

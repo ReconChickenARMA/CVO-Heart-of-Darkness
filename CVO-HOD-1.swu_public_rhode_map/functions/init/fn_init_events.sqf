@@ -5,3 +5,4 @@
 [ "shack_lightEffect", mission_fnc_shack_lightEffect ] call CBA_fnc_addEventHandler;
 
 [ "intro_smoke_truck", mission_fnc_intro_smokeEffect ] call CBA_fnc_addEventHandler;
+

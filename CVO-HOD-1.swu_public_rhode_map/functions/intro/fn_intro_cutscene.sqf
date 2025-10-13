@@ -28,30 +28,35 @@
     ]
     ,[ "START", 6 ]
     ,[ "CODE", { disableUserInput true; } ]
-    ,[ "Text", "In 1974, the colonial government of Bocano collapsed with the fall of the Estado Novo." ]
-    ,[ "Text", "In the power vacuum that followed, factions of the former resistance fractured, forming two militias, the MPLB and the UPB, to settle their differences." ]
-    ,[ "Text", "The eyes of the world fell on Bocano, and various countries began to provide support, both public and covert, to the combatants." ]
-    ,[ "Text", "You are a group bringing arms from the DDR to the UPB, to aid in their fight against the MPLB in the Mutambara region of Bocano." ]
-    ,[ "Text", "Your mission is to deliver the equipment to a cache established by our allies. Once complete, begin to integrate yourselves into the militia, providing technical and in field support, and providing field reports to High Command." ]
+    ,[ "DELAY", 3 ]
+    ,[ "CODE", { playMusic "gm_death"; } ]
+    ,[ "DELAY", 2 ]
+    ,[ "Text", "In 1974, the colonial government of Bocano collapsed." ]
+    ,[ "Text", "In the subsequent power vacuum, <br/> two militias formed, <br/> the <t color='#ffffff'>MPLB</t> and the <t color='#ffffff'>UPB</t>" ]
+    ,[ "Text", "The eyes of the world fell on Bocano." ]
+    ,[ "Text", "Many countries began to provide support, both <t color='#ffffff'>public</t> and <t color='#ffffff'>covert</t>." ]
     ,[ "CODE", { missionNamespace setVariable [ "intro_unitsIntoTruck", true, true ]; } ]
+    ,[ "Text", "You are a group bringing arms from the <t color='#ffffff'>DDR</t> to the <t color='#ffffff'>UPB</t>." ]
+    ,[ "Text", "Your mission: <br/> 1. Deliver the equipment to our allies. <br/> Meeting point: A small church in the hill country" ]
+    ,[ "Text", "2. Assist our <t color='#ffffff'>new friends</t> <br/> and gain their trust." ]
     ,[ "Text", "Good Luck....." ]
-    ,[ "DELAY", 3 ]
-    ,[ "RAVEN", 15 ]
     ,[ "CODE", { missionNamespace setVariable [ "intro_truck_start", true, true ]; } ]
-    ,[ "DELAY", 3 ]
-    ,[ "END", 6 ]
     ,[ "CODE",
         {
             [ 1 ] call acre_api_fnc_setGlobalVolume;
             60 fadeMusic 1;
-            10 fadeRadio 1;
-            10 fadeSound 1;
-            60 fadeEnvironment 1;
+            60 fadeRadio 1;
+            60 fadeSound 1;
+            20 fadeEnvironment 1;
             openMap [ false, false ];
         }
     ]
+    ,[ "DELAY", 3 ]
+    ,[ "RAVEN", 15 ]
+    ,[ "DELAY", 3 ]
     ,[ "CODE", { while { userInputDisabled } do { disableUserInput false; }; } ]
-    ,[ "DELAY", 60 ]
+    ,[ "END", 20 ]
+    ,[ "DELAY", 120 ]
     ,[ "CODE",
         {
             diwako_dui_main_toggled_off = mission_dui_cache;

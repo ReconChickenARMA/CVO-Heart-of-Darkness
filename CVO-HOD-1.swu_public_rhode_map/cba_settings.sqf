@@ -84,7 +84,7 @@ force AET_UVO_CIV_LANGUAGE = "NONE";
 
 
 // ACE Field Rations
-force acex_field_rations_enabled = true;
+force acex_field_rations_enabled = false;
 
 force acex_field_rations_affectAdvancedFatigue = true;
 force acex_field_rations_terrainObjectActions = true;
@@ -112,10 +112,10 @@ force acex_headless_enabled = false;
 force ace_rearm_level = 1;
 
 // ACE Medical -> Self Stitching = 0 or 1 [0 = No, 1 = Yes] //
-force ace_medical_treatment_allowSelfStitch = 0;
+force ace_medical_treatment_allowSelfStitch = 2;
 
 // ACE Overheating -> Suppressor Coefficient = 0.00 to 5.00 //
-force ace_overheating_suppressorCoef = 1;
+force ace_overheating_suppressorCoef = 0.1;
 
 // ACE Pylons -> Enable Pylons Menu from Ammo Trucks = true or false //
 force ace_pylons_enabledFromAmmoTrucks = true;

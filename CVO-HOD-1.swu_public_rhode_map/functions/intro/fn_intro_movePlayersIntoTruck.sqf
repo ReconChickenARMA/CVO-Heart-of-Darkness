@@ -16,7 +16,7 @@
 params [ "_truck" ];
 
 [
-    [] call cba_fnc_players select { ! _x in ( allCurators apply { getAssignedCuratorUnit _x } ) },
+    [] call cba_fnc_players select { ! ( _x in ( allCurators apply { getAssignedCuratorUnit _x } ) ) },
     truck,
     "personturret"
 ] call cvo_common_fnc_moveUnitsIntoVehicles;

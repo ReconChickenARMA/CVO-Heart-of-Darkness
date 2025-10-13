@@ -6,7 +6,7 @@ if (!hasInterface) exitWith {};
         [] call mission_fnc_intro_cutscene;
     },
     {
-        // Code for JIP
+        [] call mission_fnc_intro_cutscene_jip;
     }
 ] call cvo_common_fnc_setupReadyAction;
 

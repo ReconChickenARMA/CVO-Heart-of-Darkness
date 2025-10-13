@@ -12,7 +12,7 @@ private _state = {
         ,{ missionNamespace setVariable ["trigger_shack_cutscene", true, true]; }
         ,{}   
         ,"Delivering Weapons and Equipment..."                                         // * 4: Localized Title <STRING> (default: "")
-        ,{ isNil "trigger_shack_setup" }            // * 5: Code to check each frame <CODE> (default: {true})
+        ,{ isNil "trigger_shack_cutscene" }            // * 5: Code to check each frame <CODE> (default: {true})
         ,[]                                         // * 6: Exceptions for checking ace_common_fnc_canInteractWith <ARRAY> (default: [])
         ,true                                       // * 7: Create progress bar as dialog, this blocks user input <BOOL> (default: true)
     ] call ace_common_fnc_progressBar;
@@ -24,7 +24,7 @@ private _aceAction = [
     ,"Deliver Weapons and Equipment"                       //  * 1: Name of the action shown in the menu <STRING>
     ,"\A3\ui_f\data\igui\cfg\simpleTasks\types\backpack_ca.paa"        //  * 2: Icon <STRING> 
     ,_state                                 //  * 3: Statement <CODE>
-    ,{ isNil "trigger_shack_setup" && { isNull intel_1_church } }
+    ,{ isNil "trigger_shack_cutscene" && { isNull intel_1_church } }
                                             //  * 4: Condition <CODE>
     ,{}                                     //  * 5: Insert children code <CODE> (Optional)
     ,[]                                     //  * 6: Action parameters <ANY> (Optional)

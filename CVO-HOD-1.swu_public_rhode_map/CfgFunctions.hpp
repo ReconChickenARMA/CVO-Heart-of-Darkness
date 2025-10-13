@@ -23,6 +23,7 @@ class CfgFunctions {
         class intro {
             
             class intro_cutscene {};
+            class intro_cutscene_jip {};
             
             class intro_init { postInit = 1; };
             

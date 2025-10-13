@@ -6,3 +6,21 @@
 
 [ "intro_smoke_truck", mission_fnc_intro_smokeEffect ] call CBA_fnc_addEventHandler;
 
+[
+    "mission_addTortureDamage",
+    {
+        params ["_unit"];
+
+        for "_i" from 1 to 50 do {
+            [
+                _unit,
+                random 0.3,
+                selectRandom ["Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"],
+                selectRandom ["punch", "fire", "falling"]
+            ] call ace_medical_fnc_addDamageToUnit;
+        };
+
+        _unit setVariable ["ace_medical_fractures", [1,1,1,1,1,1]];
+        [_unit] call ace_medical_engine_fnc_updateDamageEffects;
+    }
+] call CBA_fnc_addEventHandler;

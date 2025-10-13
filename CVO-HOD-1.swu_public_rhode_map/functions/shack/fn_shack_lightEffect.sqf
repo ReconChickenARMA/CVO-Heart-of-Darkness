@@ -13,8 +13,6 @@
 * Public: No
 */
 
-// TODO: Testing
-
 diag_log format ['[CVO](debug)(fn_shack_lightEffect) _this: %1', _this];
 
 params [

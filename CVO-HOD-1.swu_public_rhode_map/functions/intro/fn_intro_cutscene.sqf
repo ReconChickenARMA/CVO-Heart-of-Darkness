@@ -14,7 +14,7 @@
 */
 
 [
-	,["QUIET", 6]
+	["QUIET", 6]
 	,["DELAY", 2]
 	,["MUTE"]
     ,["MUSIC_BOOST"]

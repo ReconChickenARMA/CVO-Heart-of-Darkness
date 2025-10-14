@@ -19,7 +19,7 @@ private _players = [] call cba_fnc_players select { ! ( _x in ( allCurators appl
 private _trucks = truck;
 
 [
-    [_players, player] select _players isEqualTo [],
+    [_players, player] select (_players isEqualTo []),
     _trucks,
     "personturret"
 ] call cvo_common_fnc_moveUnitsIntoVehicles;

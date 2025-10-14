@@ -16,7 +16,7 @@
 // intel_1_church
 
 private _structuredString = "
-<br/>You found a handwritten note at the door of the chruch:
+<br/>You found a handwritten note at the door of the church:
 <br/><font size='23' color='#ff000d' face='EraserRegular'>The red star will light the way...</font>
 ";
 

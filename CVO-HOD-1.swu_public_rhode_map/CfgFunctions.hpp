@@ -9,6 +9,7 @@ class CfgFunctions {
             class init_diary { preInit = 1; };
             class init_events { preInit = 1; };
             class init_intel { postInit = 1; };
+            class init_ready_whiteboard { postInit = 1; };
         };
         class shack // Category
         {
@@ -22,14 +23,19 @@ class CfgFunctions {
         };
         class intro {
             
-            class intro_cutscene {};
-            class intro_cutscene_jip {};
-            
             class intro_init { postInit = 1; };
             
-            class intro_smokeEffect {};
-            class intro_truckBreakdown {};
+            class intro_cutscene {};
+            class intro_cutscene_jip {};
+                        
             class intro_movePlayersIntoTruck {};
+            
+            class intro_truckBreakdown {};
+            
+            class intro_truck_oilTrail {};
+            class intro_truck_oilSpillage {};
+            
+            class intro_smokeEffect {};
         };
     };
 };

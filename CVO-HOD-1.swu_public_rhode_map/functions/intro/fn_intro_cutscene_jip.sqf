@@ -32,16 +32,16 @@
     ,[ "CODE", { playMusic "gm_death"; } ]
     ,[ "DELAY", 2 ]
     ,[ "Text", "1974<br/>The colonial <t color='#ffffff'>government of Bocano</t> collapsed" ]
-    ,[ "Text", "And <t color='#ffffff'>the eyes of the world</t> fell on Bocano" ]
+    ,[ "Text", "And<br/><t color='#ffffff'>the eyes of the world</t> fell on Bocano" ]
     ,[ "Text", "A power vacuum followed<br/> and <t color='#ffffff'>two militias</t> formed..."]
-    ,[ "Text", "The <t color='#ffffff'>Movimento Popular de Libertacao de Bocano</t><br/>also called the<br/>People's Movement for the Liberation of Bocano" ]
-    ,[ "Text", "and the<br/>People's Union of Bocano<br/> or as they call themselves<br/><t color='#ffffff'>Uniao dos Povos de Bocano</t>" ]
-    ,[ "Text", "Many powers began to provide support...<br/> both - <t color='#ffffff'>publicly</t> but also <t color='#ffffff'>behind closed doors</t>" ]
-    ,[ "Text", "Your are a group of east german mercenaries.<br/>Hired by the <t color='#ffffff'>DDR</t><br/> to support the <t color='#ffffff'>People's Union of Bocano</t>." ]
+    ,[ "Text", "The <t color='#ffffff'>Movimento Popular de Libertacao de Bocano</t><br/><br/>also called the<br/><br/>People's Movement for the Liberation of Bocano" ]
+    ,[ "Text", "and the<br/><br/>People's Union of Bocano<br/><br/> or as they call themselves<br/><br/><t color='#ffffff'>Uniao dos Povos de Bocano</t>" ]
+    ,[ "Text", "Many powers began to provide support...<br/><br/> both - <t color='#ffffff'>publicly</t> but also <t color='#ffffff'>behind closed doors</t>" ]
+    ,[ "Text", "Your are a group of east german mercenaries.<br/><br/>Hired by the <t color='#ffffff'>DDR</t><br/> to support the <t color='#ffffff'>People's Union of Bocano</t>." ]
     ,[ "Text", "Your mission:<br/>1. <t color='#ffffff'>Deliver arms and equipment</t>" ]
     ,[ "Text", "2. <t color='#ffffff'>Gain their trust</t> and assist our new friends</t>." ]
     ,[ "Text", "A <t color='#ffffff'>local smuggler</t> helped you get into the country" ]
-    ,[ "Text", "and you're on your way to <t color='#ffffff'>meet a contact at a chruch</t> close behind the border..." ]
+    ,[ "Text", "and you're on your way to <t color='#ffffff'>meet a contact at a church</t> close behind the border..." ]
     ,[ "Text", "Good Luck....." ]
     ,[ "CODE",
         {
@@ -49,7 +49,7 @@
             60 fadeMusic 1;
             60 fadeRadio 1;
             60 fadeSound 1;
-            20 fadeEnvironment 1;
+            100 fadeEnvironment 1;
             openMap [ false, false ];
         }
     ]
@@ -66,7 +66,7 @@
         }
     ]
     ,[ "END", 20 ]
-    ,[ "DELAY", 120 ]
+    ,[ "DELAY", 15 ]
     ,[ "CODE",
         {
             diwako_dui_main_toggled_off = mission_dui_cache;

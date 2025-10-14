@@ -14,25 +14,13 @@
 */
 
 [
-    [ "CODE",
-        {
-            mission_dui_cache = missionNameSpace getVariable [ "diwako_dui_main_toggled_off", false ];
-            diwako_dui_main_toggled_off = true;
-
-            allowFadeMusic_cache = ace_common_allowFadeMusic;
-            ace_common_allowFadeMusic = false;
-            ["mission_intro", 0.0, true, 30] call ace_common_fnc_setHearingCapability;
-
-            8 fadeEnvironment 0;
-
-            8 fadeMusic 2;
-            openMap [ false, true ];
-        }
-    ]
-    ,[ "START", 6 ]
-    ,[ "CODE", { disableUserInput true; } ]
+	,["QUIET", 6]
+	,["DELAY", 2]
+	,["MUTE"]
+    ,["MUSIC_BOOST"]
+	,["START", 6]
     ,[ "DELAY", 3 ]
-    ,[ "CODE", { playMusic "gm_death"; } ]
+    ,[ "MUSIC", "gm_death"]
     ,[ "DELAY", 2 ]
     ,[ "Text", "1974<br/>The colonial <t color='#ffffff'>government of Bocano</t> collapsed" ]
     ,[ "Text", "And<br/><t color='#ffffff'>the eyes of the world</t> fell on Bocano" ]
@@ -47,32 +35,11 @@
     ,[ "Text", "A <t color='#ffffff'>local smuggler</t> helped you get into the country" ]
     ,[ "Text", "and you're on your way to <t color='#ffffff'>meet a contact at a church</t> close behind the border..." ]
     ,[ "CODE", { missionNamespace setVariable [ "intro_truck_start", true, true ]; } ]
+    ,[ "UNMUTE", 60 ]
     ,[ "Text", "Good Luck....." ]
-    ,[ "CODE",
-        {
-
-
-            ["mission_intro", 0.0, false, 30] call ace_common_fnc_setHearingCapability;
-            60 fadeMusic 1;
-            100 fadeEnvironment 1;
-
-            openMap [ false, false ];
-
-            ace_common_allowFadeMusic = allowFadeMusic_cache;
-            allowFadeMusic_cache = nil;
-        }
-    ]
     ,[ "DELAY", 3 ]
     ,[ "RAVEN", 15 ]
     ,[ "DELAY", 3 ]
-    ,[ "CODE", { while { userInputDisabled } do { disableUserInput false; }; } ]
     ,[ "END", 20 ]
-    ,[ "DELAY", 120 ]
-    ,[ "CODE",
-        {
-            diwako_dui_main_toggled_off = mission_dui_cache;
-            mission_dui_cache = nil;
-        }
-    ]
 ] call cvo_common_fnc_cutscene;
 

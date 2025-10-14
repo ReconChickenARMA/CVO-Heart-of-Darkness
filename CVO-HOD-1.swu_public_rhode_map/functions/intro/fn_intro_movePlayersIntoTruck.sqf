@@ -8,15 +8,18 @@
 * None
 *
 * Example:
-* ['something', player] call prefix_component_fnc_functionname
+* [truck] call mission_fnc_movePLayersIntoTruck;
 *
 * Public: No
 */
 
-params [ "_truck" ];
+
+
+private _players = [] call cba_fnc_players select { ! ( _x in ( allCurators apply { getAssignedCuratorUnit _x } ) ) };
+private _trucks = truck;
 
 [
-    [] call cba_fnc_players select { ! ( _x in ( allCurators apply { getAssignedCuratorUnit _x } ) ) },
-    truck,
+    [_players, player] select _players isEqualTo [],
+    _trucks,
     "personturret"
 ] call cvo_common_fnc_moveUnitsIntoVehicles;

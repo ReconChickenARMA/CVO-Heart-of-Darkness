@@ -24,3 +24,22 @@
         [_unit] call ace_medical_engine_fnc_updateDamageEffects;
     }
 ] call CBA_fnc_addEventHandler;
+
+[
+    "intro_truck_damage",
+    {
+        // Damage Engine of the truck
+        { _this setHitPointDamage [_x, 1.0]; } forEach ["hitengine", "hitEngine2"];
+        _this setPilotLight false;
+        _this setCollisionLight false;
+    }
+] call CBA_fnc_addEventHandler;
+
+[
+    "intro_truck_lightOff",
+    {
+        _this setPilotLight false;
+        _this setCollisionLight false;
+    }
+] call CBA_fnc_addEventHandler;
+

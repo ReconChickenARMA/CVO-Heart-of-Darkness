@@ -14,54 +14,32 @@
 */
 
 [
-    [ "CODE",
-        {
-            mission_dui_cache = missionNameSpace getVariable [ "diwako_dui_main_toggled_off", false ];
-            diwako_dui_main_toggled_off = true;
-            [ 0.05 ] call acre_api_fnc_setGlobalVolume;
-            0 fadeMusic 2;
-            8 fadeRadio 0;
-            8 fadeSound 0;
-            8 fadeEnvironment 0;
-            openMap [ false, true ];
-        }
-    ]
-    ,[ "START", 6 ]
-    ,[ "CODE", { disableUserInput true; } ]
+	,["QUIET", 6]
+	,["DELAY", 2]
+	,["MUTE"]
+    ,["MUSIC_BOOST"]
+	,["START", 6]
     ,[ "DELAY", 3 ]
-    ,[ "CODE", { playMusic "gm_death"; } ]
+    ,[ "MUSIC", "gm_death"]
     ,[ "DELAY", 2 ]
-    ,[ "Text", "In 1974, the colonial government of Bocano collapsed." ]
-    ,[ "Text", "In the subsequent power vacuum, <br/> two militias formed, <br/> the <t color='#ffffff'>MPLB</t> and the <t color='#ffffff'>UPB</t>" ]
-    ,[ "Text", "The eyes of the world fell on Bocano." ]
-    ,[ "Text", "Many countries began to provide support, both <t color='#ffffff'>public</t> and <t color='#ffffff'>covert</t>." ]
+    ,[ "Text", "1974<br/>The colonial <t color='#ffffff'>government of Bocano</t> collapsed" ]
+    ,[ "Text", "And<br/><t color='#ffffff'>the eyes of the world</t> fell on Bocano" ]
+    ,[ "Text", "A power vacuum followed<br/> and <t color='#ffffff'>two militias</t> formed..."]
+    ,[ "Text", "The <br/> <t color='#ffffff'>Movimento Popular de Libertacao de Bocano</t><br/><br/>also called the<br/><br/>People's Movement for the Liberation of Bocano" ]
+    ,[ "Text", "and the<br/><br/>People's Union of Bocano<br/><br/> or as they call themselves<br/><br/><t color='#ffffff'>Uniao dos Povos de Bocano</t>" ]
+    ,[ "Text", "Many powers began to provide support...<br/><br/> both - <t color='#ffffff'>publicly</t> but also <t color='#ffffff'>behind closed doors</t>" ]
     ,[ "CODE", { missionNamespace setVariable [ "intro_unitsIntoTruck", true, true ]; } ]
-    ,[ "Text", "You are a group bringing arms from the <t color='#ffffff'>DDR</t> to the <t color='#ffffff'>UPB</t>." ]
-    ,[ "Text", "Your mission: <br/> 1. Deliver the equipment to our allies. <br/> Meeting point: A small church in the hill country" ]
-    ,[ "Text", "2. Assist our <t color='#ffffff'>new friends</t> <br/> and gain their trust." ]
-    ,[ "Text", "Good Luck....." ]
+    ,[ "Text", "Your are a group of east german mercenaries.<br/><br/>Hired by the <t color='#ffffff'>DDR</t><br/> to support the <t color='#ffffff'>People's Union of Bocano</t>." ]
+    ,[ "Text", "Your mission:<br/><t color='#ffffff'>1. Deliver arms and equipment</t>" ]
+    ,[ "Text", "<t color='#ffffff'>2. Gain their trust and assist our new friends</t>." ]
+    ,[ "Text", "A <t color='#ffffff'>local smuggler</t> helped you get into the country" ]
+    ,[ "Text", "and you're on your way to <t color='#ffffff'>meet a contact at a church</t> close behind the border..." ]
     ,[ "CODE", { missionNamespace setVariable [ "intro_truck_start", true, true ]; } ]
-    ,[ "CODE",
-        {
-            [ 1 ] call acre_api_fnc_setGlobalVolume;
-            60 fadeMusic 1;
-            60 fadeRadio 1;
-            60 fadeSound 1;
-            20 fadeEnvironment 1;
-            openMap [ false, false ];
-        }
-    ]
+    ,[ "UNMUTE", 60 ]
+    ,[ "Text", "Good Luck....." ]
     ,[ "DELAY", 3 ]
     ,[ "RAVEN", 15 ]
     ,[ "DELAY", 3 ]
-    ,[ "CODE", { while { userInputDisabled } do { disableUserInput false; }; } ]
     ,[ "END", 20 ]
-    ,[ "DELAY", 120 ]
-    ,[ "CODE",
-        {
-            diwako_dui_main_toggled_off = mission_dui_cache;
-            mission_dui_cache = nil;
-        }
-    ]
 ] call cvo_common_fnc_cutscene;
 

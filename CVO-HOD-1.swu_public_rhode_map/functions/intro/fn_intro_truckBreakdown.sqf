@@ -29,18 +29,20 @@ _helper attachTo [_truck, [0,3.8,-0.7]];
 
 
 [
-    {
-        // Damage Engine of the truck
-        _this setHitPointDamage ["hitengine", 1.0];
-        _this setHitPointDamage ["hitEngine2", 1.0];
-    },
-    _truck,
+    CBA_fnc_targetEvent,
+    ["intro_truck_damage", _truck, _truck],
     52
 ] call CBA_fnc_waitAndExecute;
 
+[MISSION_fnc_intro_truck_oilTrail, [truck], 40] call CBA_fnc_waitAndExecute;
 
-[CBA_fnc_globalSay3d, [_helper, "failedStart", 500], 60] call CBA_fnc_waitAndExecute;
-[CBA_fnc_globalSay3d, [_helper, "failedStart", 500], 70] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalSay3d, [driver _truck, "puta", 500], 53] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalSay3d, [_helper, "failedStart", 500], 56] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalSay3d, [_helper, "failedStart", 500], 67] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalSay3d, [driver _truck, "comeon", 500], 67] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalSay3d, [driver _truck, "ahshit", 500], 77] call CBA_fnc_waitAndExecute;
+
+[CBA_fnc_targetEvent, [ "intro_truck_lightOff", _truck, _truck], 85] call CBA_fnc_waitAndExecute;
 
 
 // Create Smoke Effect

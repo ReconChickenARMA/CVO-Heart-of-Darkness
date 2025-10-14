@@ -1,7 +1,7 @@
 if (!hasInterface) exitWith {};
 
 [  
-    _actionObject,
+    intro_whiteboard,
     {
         [] call mission_fnc_intro_cutscene;
     },

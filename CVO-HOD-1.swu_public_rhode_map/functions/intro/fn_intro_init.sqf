@@ -4,8 +4,7 @@ if !(isServer) exitWith {};
 // WUAE to move the units into the truck.
 [
     { ! isNil "intro_unitsIntoTruck" },
-    mission_fnc_intro_movePlayersIntoTruck,
-    truck
+    mission_fnc_intro_movePlayersIntoTruck
 ] call CBA_fnc_waitUntilAndExecute;
 
 // Will Injure the hostage when players are nearby

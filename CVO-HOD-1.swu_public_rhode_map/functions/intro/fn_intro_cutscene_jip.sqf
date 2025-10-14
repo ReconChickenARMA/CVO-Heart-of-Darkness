@@ -13,64 +13,37 @@
 * Public: No
 */
 
+
 [
-    [ "CODE",
-        {
-            mission_dui_cache = missionNameSpace getVariable [ "diwako_dui_main_toggled_off", false ];
-            diwako_dui_main_toggled_off = true;
-            [ 0.05 ] call acre_api_fnc_setGlobalVolume;
-            0 fadeMusic 2;
-            8 fadeRadio 0;
-            8 fadeSound 0;
-            8 fadeEnvironment 0;
-            openMap [ false, true ];
-        }
-    ]
-    ,[ "START", 6 ]
-    ,[ "CODE", { disableUserInput true; } ]
+	["QUIET", 6]
+	,["DELAY", 2]
+	,["MUTE"]
+    ,["MUSIC_BOOST"]
+	,["START", 6]
     ,[ "DELAY", 3 ]
-    ,[ "CODE", { playMusic "gm_death"; } ]
+    ,[ "MUSIC", "gm_death"]
     ,[ "DELAY", 2 ]
     ,[ "Text", "1974<br/>The colonial <t color='#ffffff'>government of Bocano</t> collapsed" ]
     ,[ "Text", "And<br/><t color='#ffffff'>the eyes of the world</t> fell on Bocano" ]
     ,[ "Text", "A power vacuum followed<br/> and <t color='#ffffff'>two militias</t> formed..."]
-    ,[ "Text", "The <t color='#ffffff'>Movimento Popular de Libertacao de Bocano</t><br/><br/>also called the<br/><br/>People's Movement for the Liberation of Bocano" ]
+    ,[ "Text", "The <br/> <t color='#ffffff'>Movimento Popular de Libertacao de Bocano</t><br/><br/>also called the<br/><br/>People's Movement for the Liberation of Bocano" ]
     ,[ "Text", "and the<br/><br/>People's Union of Bocano<br/><br/> or as they call themselves<br/><br/><t color='#ffffff'>Uniao dos Povos de Bocano</t>" ]
     ,[ "Text", "Many powers began to provide support...<br/><br/> both - <t color='#ffffff'>publicly</t> but also <t color='#ffffff'>behind closed doors</t>" ]
     ,[ "Text", "Your are a group of east german mercenaries.<br/><br/>Hired by the <t color='#ffffff'>DDR</t><br/> to support the <t color='#ffffff'>People's Union of Bocano</t>." ]
-    ,[ "Text", "Your mission:<br/>1. <t color='#ffffff'>Deliver arms and equipment</t>" ]
-    ,[ "Text", "2. <t color='#ffffff'>Gain their trust</t> and assist our new friends</t>." ]
+    ,[ "Text", "Your mission:<br/><t color='#ffffff'>1. Deliver arms and equipment</t>" ]
+    ,[ "Text", "<t color='#ffffff'>2. Gain their trust and assist our new friends</t>." ]
     ,[ "Text", "A <t color='#ffffff'>local smuggler</t> helped you get into the country" ]
     ,[ "Text", "and you're on your way to <t color='#ffffff'>meet a contact at a church</t> close behind the border..." ]
+    ,[ "CODE", {
+        private _units = units group player - [player];
+        private _pos = if (_units isEqualTo []) then { getPos player } else { [selectRandom _units, 5, 25, 2] call BIS_fnc_findSafePos; };
+        player setPos _pos;
+    }]
+    ,[ "UNMUTE", 60 ]
     ,[ "Text", "Good Luck....." ]
-    ,[ "CODE",
-        {
-            [ 1 ] call acre_api_fnc_setGlobalVolume;
-            60 fadeMusic 1;
-            60 fadeRadio 1;
-            60 fadeSound 1;
-            100 fadeEnvironment 1;
-            openMap [ false, false ];
-        }
-    ]
     ,[ "DELAY", 3 ]
     ,[ "RAVEN", 15 ]
     ,[ "DELAY", 3 ]
-    ,[ "CODE", { while { userInputDisabled } do { disableUserInput false; }; } ]
-    ,[
-        "CODE",
-        {
-            private _units = units group player - [player];
-            private _pos = if (_units isEqualTo []) then { getPos player } else { [selectRandom _units, 5, 25, 2] call BIS_fnc_findSafePos; };
-            player setPos _pos;
-        }
-    ]
     ,[ "END", 20 ]
-    ,[ "DELAY", 15 ]
-    ,[ "CODE",
-        {
-            diwako_dui_main_toggled_off = mission_dui_cache;
-            mission_dui_cache = nil;
-        }
-    ]
 ] call cvo_common_fnc_cutscene;
+

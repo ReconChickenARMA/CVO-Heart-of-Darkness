@@ -14,4 +14,22 @@ class CfgSounds
 		sound[] = { "data\failed_start.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
         titles[] = {}; // no subtitles
 	};
+	class puta
+	{
+		name = "puta";						// display name
+		sound[] = { "data\puta.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+        titles[] = {}; // no subtitles
+	};
+	class comeon
+	{
+		name = "comeon";						// display name
+		sound[] = { "data\comeon.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+        titles[] = {}; // no subtitles
+	};
+	class ahshit
+	{
+		name = "ahshit";						// display name
+		sound[] = { "data\ahshit.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
+        titles[] = {}; // no subtitles
+	};
 };

@@ -66,7 +66,7 @@ deleteVehicle lightsource_placeholder;
 
         // Stop The Light Flickering once there are no more players near the church
         [
-            { [] call cba_fnc_players select { missionNamespace getVariable "Shack_Lightsource_POS" distance2D _x < 500 } isNotEqualTo []; },
+            { [] call cba_fnc_players select { missionNamespace getVariable "Shack_Lightsource_POS" distance2D _x < 300 } isNotEqualTo []; },
             { missionNamespace setVariable ["trigger_shack_stopLight", true, true]; }
         ] call CBA_fnc_waitUntilAndExecute;
     }

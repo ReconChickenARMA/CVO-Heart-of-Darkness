@@ -3,10 +3,12 @@ if (!hasInterface) exitWith {};
 [  
     intro_whiteboard,
     {
-        [] call mission_fnc_intro_cutscene;
+        // Not Jip
+        [false] call mission_fnc_intro_cutscene;
     },
     {
-        [] call mission_fnc_intro_cutscene_jip;
+        // Jip
+        [true] call mission_fnc_intro_cutscene;
     }
 ] call cvo_common_fnc_setupReadyAction;
 

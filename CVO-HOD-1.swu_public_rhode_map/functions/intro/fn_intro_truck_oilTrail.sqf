@@ -30,3 +30,4 @@ _obj setDir random 360;
     [_truck],
     random 1
 ] call CBA_fnc_waitAndExecute;
+

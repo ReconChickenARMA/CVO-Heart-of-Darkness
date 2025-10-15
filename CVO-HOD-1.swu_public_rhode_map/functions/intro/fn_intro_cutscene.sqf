@@ -14,13 +14,13 @@
 */
 
 [
-	,["QUIET", 6]
+	["QUIET", 6]
 	,["DELAY", 2]
 	,["MUTE"]
     ,["MUSIC_BOOST"]
 	,["START", 6]
     ,[ "DELAY", 3 ]
-    ,[ "MUSIC", "gm_death"]
+    ,[ "MUSIC", "gm_response"]
     ,[ "DELAY", 2 ]
     ,[ "Text", "1974<br/>The colonial <t color='#ffffff'>government of Bocano</t> collapsed" ]
     ,[ "Text", "And<br/><t color='#ffffff'>the eyes of the world</t> fell on Bocano" ]

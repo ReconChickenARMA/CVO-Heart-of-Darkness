@@ -26,7 +26,6 @@ class CfgFunctions {
             class intro_init { postInit = 1; };
             
             class intro_cutscene {};
-            class intro_cutscene_jip {};
                         
             class intro_movePlayersIntoTruck {};
             

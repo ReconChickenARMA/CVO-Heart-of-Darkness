@@ -38,6 +38,7 @@ class CfgFunctions {
             class intro_smokeEffect {};
             
             class intro_missionCredits {};
+            class intro_missionCredits_jip { postInit = 1; };
         };
     };
 };

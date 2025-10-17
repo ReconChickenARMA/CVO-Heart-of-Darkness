@@ -3,7 +3,7 @@ if (!hasInterface) exitWith {};
 [  
     intro_whiteboard,
     {
-        // Not Jip
+        missionNamespace setVariable ["texture_jip", true, true];
         [false] call mission_fnc_intro_cutscene;
     },
     {

@@ -43,3 +43,22 @@
     }
 ] call CBA_fnc_addEventHandler;
 
+[
+    "intro_addHaul",
+    {
+        params ["_unit", "_slot"];
+        _slot params ["_type", "_className"];
+
+        switch (_type) do {
+            case "backpack": {
+                _unit addBackpack _className;
+                if (_className isEqualTo "gm_gc_army_backpack_80_at_empty_str") then { _unit addBackpackCargoGlobal ["gm_1Rnd_40mm_heat_pg7v_rpg7", 5]; };
+            };
+
+            case "launcher": {
+                if (_className isEqualTo "gm_rpg7_prp") then { _unit addMagazine "gm_1Rnd_40mm_heat_pg7v_rpg7"; };
+                _unit addWeapon [_className, false];
+            };
+        };
+    }
+] call CBA_fnc_addEventHandler;

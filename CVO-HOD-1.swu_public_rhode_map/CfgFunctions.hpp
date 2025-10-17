@@ -36,6 +36,8 @@ class CfgFunctions {
             class intro_truck_oilSpillage {};
             
             class intro_smokeEffect {};
+            
+            class intro_missionCredits {};
         };
     };
 };

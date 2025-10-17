@@ -15,6 +15,9 @@
 
 if (!isServer) exitWith {};
 
+private _crate = missionNamespace getVariable ["crate_gear", objNull];
+if (isNull _crate) exitWith {};
+
 private _array = [
     ["cigs_matches", 20],
     ["cigs_voron_cigpack", 40],
@@ -23,5 +26,4 @@ private _array = [
     ["FISH_Cream_Kit_Europe", 20]
 ];
 
-private _crate = crate_gear;
 { _crate addItemCargoGlobal _x } forEach _array;

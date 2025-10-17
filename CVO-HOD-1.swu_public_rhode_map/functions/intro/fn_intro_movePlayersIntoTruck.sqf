@@ -13,13 +13,18 @@
 * Public: No
 */
 
+private _players = [] call cba_fnc_players;
 
+// If its not Preview, remove zeus' from the players array
+if (!is3DENPreview) then { _players = _players select { ! ( _x in ( allCurators apply { getAssignedCuratorUnit _x } ) ) }; };
 
-private _players = [] call cba_fnc_players select { ! ( _x in ( allCurators apply { getAssignedCuratorUnit _x } ) ) };
+if (_players isEqualTo []) then _players = [player];
+
+[_players] call mission_fnc_init_distributeHauls;
+
 private _trucks = truck;
-
 [
-    [_players, player] select (_players isEqualTo []),
+    _players,
     _trucks,
     "personturret"
 ] call cvo_common_fnc_moveUnitsIntoVehicles;

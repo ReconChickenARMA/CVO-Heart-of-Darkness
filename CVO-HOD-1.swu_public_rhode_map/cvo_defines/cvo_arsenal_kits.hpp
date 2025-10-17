@@ -81,8 +81,7 @@ class cvo_arsenal_kits
         };
     };
     */
-    /*
-
+    
     class Immersion_Cigs: baseKit {
         addon_dependency = "cigs_core";
         class items {
@@ -95,11 +94,11 @@ class cvo_arsenal_kits
             class cigs_pops_poppack {};
             class cigs_lucky_strike_cigpack {};
             class cigs_morley_cigpack {};
-            class cigs_baja_blast_cigpack {};
-            class cigs_crayons_crayonpack {};
+            //class cigs_baja_blast_cigpack {};
+            //class cigs_crayons_crayonpack {};
         };
     };
-    */
+    
     /*
 
     class Aegis_Armbands: baseKit {
@@ -129,69 +128,50 @@ class cvo_arsenal_kits
         };
     };
     */
-    /*
+    
 
     // Wearables / Gear
     class Base_Uniforms: baseKit {
         class items {
-            //Aegis/Atlas Contractor Uniforms
-            // class Aegis_U_lxWS_ION_Flanneltna_F {};
-            // class U_lxWS_ION_Casual4 {};
-            // class U_lxWS_ION_Casual2 {};
-            // class Aegis_U_lxWS_ION_Casualtna_F {};
-            // class U_lxWS_ION_Casual6 {};
-            // class U_I_L_Uniform_01_camo_F {};
-            //class Opf_U_O_S_Uniform_01_sweater_F {};
-            //class U_lxWS_SFIA_deserter {};
-            // class Atlas_U_CombatUniformNCU_01_mcam_F {};
-            // class Atlas_U_CombatUniformNCU_02_mcam_F {};
-            class Atlas_U_O_Afghanka_01_grn_F {};
-            class Atlas_U_O_Afghanka_02_grn_F {};
-            class Atlas_U_O_Afghanka_01_khk_F {};
-            class Atlas_U_O_Afghanka_02_khk_F {};
-            class Atlas_U_I_Afghanka_01_ardi_half_F {};
-            class Atlas_U_I_Afghanka_02_ardi_half_F {};
-            class MYR_fat_7 {};
-            class MYR_fat_5 {};
-            class MYR_fat_6 {};
-            class MYR_fat_8 {};
-            //class MYR_fat_9 {};
-            // class MYR_fat_3 {};
-            // class MYR_fat_2 {};
-            // class MYR_fat_4 {};
-            // class MYR_fat_1 {};
+            //GDR Merc mixed uniforms
+            class gm_xx_army_uniform_fighter_03_brn {};
+            class gm_xx_army_uniform_fighter_03_blk {};
+            class gm_xx_army_uniform_fighter_02_oli {};
+            class gm_xx_army_uniform_fighter_01_alp {};
+            class gm_xx_army_uniform_fighter_01_oli {};
+            class gm_ge_uniform_pilot_commando_rolled_blk {};
+            class gm_ge_uniform_pilot_commando_rolled_gry {};
+            class gm_ge_uniform_pilot_commando_rolled_oli {};
+            class HoD_O_MPLB_FieldUniform_Olv {};
+            class HoD_O_MPLB_FieldUniform_Olv_Rolled {};
+            class HoD_O_MPLB_FieldUniform_OlvCbnLiz {};
+            class HoD_O_MPLB_FieldUniform_OlvCbnLiz_Rolled {};
+            class HoD_O_MPLB_FieldUniform_CbnLizOlv {};
+            class HoD_O_MPLB_FieldUniform_CbnLizOlv_Rolled {};
+            class HoD_O_MPLB_FieldUniform_Stchtarn_Rolled {};
+            class HoD_O_MPLB_FieldUniform_Stchtarn {};
         };
     };
-    */
-    /*
+    
+    
 
     class Base_Vests: baseKit {
         class items {
-            class V_PlateCarrier1_blk {};
-            class V_PlateCarrier1_cbr {};
-            class V_PlateCarrier2_blk {};
-            class V_PlateCarrier2_cbr {};
-            class V_Chestrig_blk {};
-            class V_HarnessOSpec_blk {};
-            class V_HarnessO_blk {};
-            class Aegis_V_SmershVest_01_blk_F {};
-            class V_SmershVest_01_khaki_F {};
-            class V_SmershVest_01_F {};
-            class V_SmershVest_01_olive_F {};
-            class Aegis_V_CarrierRigKBT_01_cqb_black_F {};
-            class Aegis_V_CarrierRigKBT_01_cqb_cbr_F {};
-            class Aegis_V_CarrierRigKBT_01_cqb_olive_F {};
-            class Aegis_V_OCarrierLuchnik_Lite_blk_F {};
-            class Aegis_V_OCarrierLuchnik_Lite_grn_F {}; 
-            class Aegis_V_OCarrierLuchnik_Lite_khk_F {}; 
-            // Myrmidones Inc Ves;
-            class MYR_vest_nato_mixed_1_1 {};
-            class MYR_vest_nato_mixed_1_2 {};
-            class MYR_vest_GA_lite_blk {};
-            class MYR_vest_GA_rig_blk {};
+            class HoD_Equip_V_Chicom_Type56_Grn {};
+            class HoD_Equip_V_Chicom_Type56_Khk {};
+            class HoD_Equip_V_Chicom_Type56_Mix_01 {};
+            class HoD_Equip_V_Chicom_Type56_Mix_02 {};
+            class HoD_Equip_V_Chicom_Type56_Mix_03 {};
+            class HoD_Equip_Vest_Rifleman_Brn {};
+            class HoD_Equip_Vest_SMG_Brn {};
+            class vn_b_vest_sas_02 {};
+            class vn_b_vest_sas_01 {};
+            class vn_b_vest_sog_01 {};
+            class vn_b_vest_sog_04 {};
+            
         };
     };
-    */
+    
     /*
 
     class Base_Backpacks: baseKit {
@@ -215,19 +195,18 @@ class cvo_arsenal_kits
         };
     };
     */
-    /*
+    
 
     class Base_Headgear: baseKit {
         class items {
-            class H_Cap_headphones_ion_lxws {};
-            class lxWS_H_CapB_rvs_blk_ION {};
-            class lxWS_H_PASGT_goggles_black_F {};
-            class H_HelmetHBK_arid_F {};
-            class H_HelmetHBK_olive_headset_F {};
-            class H_HelmetHBK_arid_headset_F {};
-            class H_HelmetHBK_olive_F {};
-            class Aegis_H_Helmet_Virtus_Headset_rgr_F {};
-            class Aegis_H_Helmet_Virtus_Headset_snd_F {};
+            class gm_xx_headgear_headwrap_01_blk {};
+            class vn_b_headband_01 {};
+            class vn_b_headband_04 {};
+            class gm_xx_headgear_headwrap_01_grn {};
+            class gm_xx_headgear_headwrap_01_oli {};
+            class H_Bandanna_gry {};
+            class H_Bandanna_blu {};
+            class H_Bandanna_cbr {};
             class Aegis_H_Helmet_Virtus_snd_F {};
             class Aegis_H_Helmet_Virtus_rgr_F {};
             class Atlas_H_PASGT_Cover_Olive_F {};
@@ -258,7 +237,7 @@ class cvo_arsenal_kits
             class G_Tactical_Black {};
         };
     };
-    */
+    
     /*
 
     class Base_Facewear: baseKit {

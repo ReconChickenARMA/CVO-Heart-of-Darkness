@@ -25,7 +25,10 @@ private _slots = [];
 { 
 
     if (_slots isEqualTo []) exitWith {};
+    
     private _unit = _x;
+    if ([_unit] call ace_common_fnc_isMedic) then { continue };
+    
     private _slot = _slots deleteAt 0;
     ["intro_addHaul", [_unit, _slot], _unit] call CBA_fnc_targetEvent;
 

@@ -6,6 +6,7 @@ class CfgFunctions {
         class init // Category
         {
             class init_babel { postInit = 1; };
+            class init_cigCrate { postInit = 1; };
             class init_diary { preInit = 1; };
             class init_events { preInit = 1; };
             class init_intel { postInit = 1; };
@@ -35,6 +36,8 @@ class CfgFunctions {
             class intro_truck_oilSpillage {};
             
             class intro_smokeEffect {};
+            
+            class intro_missionCredits {};
         };
     };
 };

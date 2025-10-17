@@ -22,6 +22,7 @@ private _slots = [];
 { _slots pushBack ["backpack", _x] } forEach ["gm_dshkm_weaponBag", "gm_dshkm_aatripod_weaponBag", "gm_fagot_launcher_weaponBag", "gm_gc_army_backpack_80_at_empty_str"];
 { _slots pushBack ["launcher", _x] } forEach ["gm_rpg7_prp"];
 
+
 { 
 
     if (_slots isEqualTo []) exitWith {};
@@ -32,4 +33,4 @@ private _slots = [];
     private _slot = _slots deleteAt 0;
     ["intro_addHaul", [_unit, _slot], _unit] call CBA_fnc_targetEvent;
 
-} forEach _players;
+} forEachReversed _players;

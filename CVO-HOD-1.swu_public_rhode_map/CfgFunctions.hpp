@@ -28,6 +28,7 @@ class CfgFunctions {
             
             class intro_cutscene {};
                         
+            class intro_distributeHauls {};
             class intro_movePlayersIntoTruck {};
             
             class intro_truckBreakdown {};
@@ -39,6 +40,7 @@ class CfgFunctions {
             
             class intro_missionCredits {};
             class intro_missionCredits_jip { postInit = 1; };
+
         };
     };
 };

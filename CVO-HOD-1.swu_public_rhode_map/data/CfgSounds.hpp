@@ -18,7 +18,7 @@ class CfgSounds
 	{
 		name = "puta";						// display name
 		sound[] = { "data\puta.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
-        titles[] = {}; // no subtitles
+        titles[] = {0, "*incoherent cursing*"}; // no subtitles
 	};
 	class comeon
 	{

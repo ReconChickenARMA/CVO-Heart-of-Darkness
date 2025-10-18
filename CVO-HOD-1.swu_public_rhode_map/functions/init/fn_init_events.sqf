@@ -25,11 +25,14 @@
     }
 ] call CBA_fnc_addEventHandler;
 
+
+
 [
     "intro_truck_damage",
     {
         // Damage Engine of the truck
         { _this setHitPointDamage [_x, 1.0]; } forEach ["hitengine", "hitEngine2"];
+        { _this setHitPointDamage [_x, 1.0]; } forEach ["#hitpoint_lightfront_1_1","#hitpoint_lightfront_1_1","#hitpoint_lightfront_1_2","#hitpoint_lightfront_1_2","#hitpoint_lightfront_2_1","#hitpoint_lightfront_2_2","#hitpoint_lightfront_3_1","#hitpoint_lightfront_3_1","#hitpoint_lightfront_3_2","#hitpoint_lightfront_3_2","#hitpoint_lightback_1_1","#hitpoint_lightback_1_2"];
         _this setPilotLight false;
         _this setCollisionLight false;
     }
@@ -62,3 +65,6 @@
         };
     }
 ] call CBA_fnc_addEventHandler;
+
+
+["cvo_common_fnc_subtitles", { _this call cvo_common_fnc_subtitles; }] call CBA_fnc_addEventHandler;

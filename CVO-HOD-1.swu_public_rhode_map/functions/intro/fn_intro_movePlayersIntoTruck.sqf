@@ -28,3 +28,7 @@ private _trucks = truck;
     _trucks,
     "personturret"
 ] call cvo_common_fnc_moveUnitsIntoVehicles;
+
+[ [5,5] ] call cvo_common_fnc_skipTimeTo;
+setTimeMultiplier 0.01;
+1 setFog [0.8, 1.5, 0];

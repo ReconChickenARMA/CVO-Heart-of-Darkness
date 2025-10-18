@@ -184,6 +184,8 @@ class cvo_arsenal_kits
             class gm_1rnd_40x47mm_he_ngo74 {};
             class gm_explosive_petn_charge {};
             class vn_b_vest_sas_02 {};
+            class gm_dk_army_backpack_73_oli {};
+            class gm_ge_army_backpack_80_oli {};
         };
     };
     

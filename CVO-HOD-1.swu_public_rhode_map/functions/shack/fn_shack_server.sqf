@@ -28,4 +28,4 @@ private _players = [] call CBA_fnc_players;
 
 setTimeMultiplier 1.0;
 [ [5, 10] ] call cvo_common_fnc_skipTimeTo;
-30*60 setFog [0.0, 1.5, 0];
+30*60 setFog [0.0, 0.015, 0];

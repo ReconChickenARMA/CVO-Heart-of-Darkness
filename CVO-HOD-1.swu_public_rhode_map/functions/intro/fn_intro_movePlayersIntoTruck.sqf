@@ -31,4 +31,4 @@ private _trucks = truck;
 
 [ [5,5] ] call cvo_common_fnc_skipTimeTo;
 setTimeMultiplier 0.01;
-1 setFog [0.8, 1.5, 0];
+1 setFog [0.8, 0.015, 0];

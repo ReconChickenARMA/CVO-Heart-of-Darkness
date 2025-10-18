@@ -18,18 +18,18 @@ class CfgSounds
 	{
 		name = "puta";						// display name
 		sound[] = { "data\puta.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
-        titles[] = {0, "*incoherent cursing*"}; // no subtitles
+        titles[] = {{0, 0.5}, "*incoherent cursing*"}; // no subtitles
 	};
 	class comeon
 	{
 		name = "comeon";						// display name
 		sound[] = { "data\comeon.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
-        titles[] = {}; // no subtitles
+        titles[] = {{0, 0.5}, "come ooooon"}; // no subtitles
 	};
 	class ahshit
 	{
 		name = "ahshit";						// display name
 		sound[] = { "data\ahshit.ogg", 1, 1, 100 };	// file, volume, pitch, maxDistance
-        titles[] = {}; // no subtitles
+        titles[] = {{0, 0.5}, "ah sheeeeeet"}; // no subtitles
 	};
 };

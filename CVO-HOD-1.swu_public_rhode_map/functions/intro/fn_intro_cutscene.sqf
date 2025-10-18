@@ -61,7 +61,7 @@ params [ [ "_isJIP", false ] ];
     }]
     ,[ "DELAY", 3 ]
     ,[ "UNMUTE", 150 ]
-    ,[ "Text", "Good Luck....." ]
+    ,[ "Text", "Good Luck ..." ]
     ,[ "DELAY", 3 ]
     ,[ "RAVEN", 6 ]
     ,[ "DELAY", 3 ]

@@ -99,46 +99,35 @@ class cvo_arsenal_kits
         };
     };
     
-    /*
+    
 
-    class Aegis_Armbands: baseKit {
+    class watches: baseKit {
         class items {
-            class Aegis_G_Armband_BLU_F {};
-            class Aegis_G_Armband_BLU_alt_F {};
-            class Aegis_NV_G_Armband_Blu_Alt_F {};
-            class Aegis_NV_G_Armband_Blu_F {};
+            class vn_b_item_watch {};
+            class gm_watch_kosei_80 {};
+            class gm_watch_kosei_80_blu {};
+            class gm_watch_kosei_80_red {};
+            class gm_watch_kosei_80_grn {};
         };
     };
-    */
-    /*
-
-    // RADIOS
-    class Radios_Base: baseKit {
-        class items {
-            class ACRE_PRC343 {};
-        };
-    };
-    */
-    /*
-
-    class Radios_Leadership: baseKit {
-        role = "Leadership";
-        class items {
-            class ACRE_PRC148 {};
-        };
-    };
-    */
+    
     
 
     // Wearables / Gear
     class Base_Uniforms: baseKit {
         class items {
             //GDR Merc mixed uniforms
+            class gm_gc_civ_uniform_man_01_80_blk {};
+            class gm_gc_civ_uniform_man_01_80_blu {};
+            class gm_gc_civ_uniform_man_02_80_brn {};
             class gm_xx_army_uniform_fighter_03_brn {};
             class gm_xx_army_uniform_fighter_03_blk {};
             class gm_xx_army_uniform_fighter_02_oli {};
             class gm_xx_army_uniform_fighter_01_alp {};
             class gm_xx_army_uniform_fighter_01_oli {};
+            class gm_ge_uniform_pilot_commando_blk {};
+            class gm_ge_uniform_pilot_commando_gry {};
+            class gm_ge_uniform_pilot_commando_oli {};
             class gm_ge_uniform_pilot_commando_rolled_blk {};
             class gm_ge_uniform_pilot_commando_rolled_gry {};
             class gm_ge_uniform_pilot_commando_rolled_oli {};
@@ -148,8 +137,8 @@ class cvo_arsenal_kits
             class HoD_O_MPLB_FieldUniform_OlvCbnLiz_Rolled {};
             class HoD_O_MPLB_FieldUniform_CbnLizOlv {};
             class HoD_O_MPLB_FieldUniform_CbnLizOlv_Rolled {};
-            class HoD_O_MPLB_FieldUniform_Stchtarn_Rolled {};
-            class HoD_O_MPLB_FieldUniform_Stchtarn {};
+            
+            
         };
     };
     
@@ -199,417 +188,171 @@ class cvo_arsenal_kits
 
     class Base_Headgear: baseKit {
         class items {
+            class gm_xx_headgear_headwrap_01_grn {};
+            class gm_xx_headgear_headwrap_01_oli {};
             class gm_xx_headgear_headwrap_01_blk {};
             class vn_b_headband_01 {};
             class vn_b_headband_04 {};
-            class gm_xx_headgear_headwrap_01_grn {};
-            class gm_xx_headgear_headwrap_01_oli {};
+            class vn_b_bandana_04 {};
             class H_Bandanna_gry {};
             class H_Bandanna_blu {};
             class H_Bandanna_cbr {};
-            class Aegis_H_Helmet_Virtus_snd_F {};
-            class Aegis_H_Helmet_Virtus_rgr_F {};
-            class Atlas_H_PASGT_Cover_Olive_F {};
-            class Atlas_H_PASGT_Cover_Tan_F {};
-			class H_Beret_blk {};
-            class H_Beret_Headset_lxWS {};
-            class H_Booniehat_blk {};
-            class H_Booniehat_mgrn_hs {};
-            class H_Cap_blk_CMMG {};
-			class H_Watchcap_blk_hs {};
-			class H_Watchcap_blk {};
-			class H_Watchcap_cbr_hs {};
-			class H_Watchcap_cbr {};
-			class H_Watchcap_khk_hs {};
-			class H_Watchcap_khk {};
-            // Myrmidones Stuff
-            class MYR_basic_helmet_gray {};
-            class MYR_basic_helmet_khaki {};
-            class MYR_cap_blk {};
-            class MYR_cap_red {};
-            class MYR_cap {};
-            class MYR_cap_headphones {};
-            class MYR_cap_hs {};
-            class MYR_hel_ech_1 {};
-            class MYR_hel_sf_1 {};
-            class MYR_hel_lgt_1 {};
-            class G_Tactical_Yellow {};
-            class G_Tactical_Black {};
+            class gm_ge_headgear_hat_beanie_blk {};
+            class HoD_I_UPB_Headgear_Booniehat_Olv {};            
+            class H_Booniehat_khk {};
+            class H_Booniehat_oli {};
+            class H_Booniehat_tan {};
+            class H_Hat_Safari_sand_F {};
+            class H_Hat_Safari_olive_F {};            
+           
         };
     };
     
-    /*
+    
 
     class Base_Facewear: baseKit {
         class items {
             //vanilla+ glasses
             class G_Aviator {};
-            class G_Glasses_black_RF {};
-            class G_Glasses_white_RF {};
+            class G_Bandanna_aviator {};
+            class G_Bandanna_khk {};
+            class G_Bandanna_oli {};
+            class G_Bandanna_tan {};
             class G_Spectacles {};
-            class G_Tactical_Clear {};
-            class G_Tactical_Yellow {};
-            class G_Lady_Blue {};
-            class G_Shades_Black {};
-            class G_Shades_Blue {};
-            class G_Shades_Green {};
-            class G_Shades_Red {};
-            class G_Tactical_Black {};
-            class G_Shades_Yellowred {};
-            class G_Shemag_shades {};
-            class G_Tactical_Camo {};
-            class G_Squares_Tinted {};
-            class G_Shemag_tactical {};
-            //milgear+ glasses
-            class milgp_f_tactical_khk {};
-            class milgp_f_face_shield_shades_BLK {};
-            class milgp_f_face_shield_shades_CB {};
-            class milgp_f_face_shield_shades_khk {};
-            class milgp_f_face_shield_shades_RGR {};
-            class milgp_f_face_shield_shades_shemagh_BLK {};
-            class milgp_f_face_shield_shades_shemagh_CB {};
-            class milgp_f_face_shield_shades_shemagh_khk {};
-            class milgp_f_face_shield_shades_shemagh_RGR {};
-            //vanilla goggles
-            class G_Balaclava_combat {};
-            class G_Balaclava_lowprofile {};
-            class G_Combat {};
-            class G_Combat_Goggles_blk_F {};
-            class G_Combat_lxWS {};
-            class G_Balaclava_light_G_blk_F {};
-            class G_Lowprofile {};
-            //milgear goggles
-            class milgp_f_face_shield_goggles_BLK {};
-            class milgp_f_face_shield_goggles_CB {};
-            class milgp_f_face_shield_goggles_khk {};
-            class milgp_f_face_shield_goggles_RGR {};
-            class milgp_f_face_shield_goggles_shemagh_BLK {};
-            class milgp_f_face_shield_goggles_shemagh_CB {};
-            class milgp_f_face_shield_goggles_shemagh_khk {};
-            class milgp_f_face_shield_goggles_shemagh_RGR {};
-            class milgp_f_goggles_khk {};
-            //vanilla misc 
-            class G_Headset_light {};
-            class G_Shemag_khk {};
-            class G_Shemag_oli {};
-            class G_Shemag_red {};
-            class G_Shemag_tan {};
-            class G_Shemag_white {};
-            class Aegis_G_Condor_EyePro_F {};
-            class G_Headset_Tactical {};
-            class G_Headset_Tactical_khk {};
-            class G_Headset_Tactical_grn {};
-            class G_Balaclava_blk_lxWS {};
-            class G_Balaclava_snd_lxWS {};
-            class G_Headset_lxWS {};
-            //milgear misc 
-            class milgp_f_face_shield_BLK {};
-            class milgp_f_face_shield_CB {};
-            class milgp_f_face_shield_khk {};
-            class milgp_f_face_shield_RGR {};
-            class milgp_f_face_shield_shemagh_BLK {};
-            class milgp_f_face_shield_shemagh_CB {};
-            class milgp_f_face_shield_shemagh_khk {};
-            class milgp_f_face_shield_shemagh_RGR {};
+            class gm_ge_facewear_dustglasses {};
+            class gm_ge_facewear_dustglasses_relaxed {};
+            class gm_gc_army_facewear_dustglasses {};
+            class gm_ge_facewear_glacierglasses {};
+            class gm_xx_facewear_scarf_01_blk {};
+            class gm_xx_facewear_scarf_01_pt1 {};
+            class gm_xx_facewear_scarf_01_grn {};
+            class gm_xx_facewear_scarf_01_gry {};
+            class gm_xx_facewear_scarf_02_blk {};
+            class gm_xx_facewear_scarf_02_grn {};
+            class gm_xx_facewear_scarf_02_oli {};
+            class gm_xx_facewear_scarf_01_oli {};
+            class gm_ge_facewear_stormhood_blk {};
+            class gm_ge_facewear_stormhood_dustglasses_blk {};
+            class gm_ge_facewear_stormhood_brd {};
+            
         };
     };
-    */
-    /*
+    
 
-    // Weapons
-    class Weapons_Primary_SMGs: baseKit {
-        class items {
-            // SMGs
-            class JCA_smg_UMP_black_F {};
-            class JCA_smg_UMP_AFG_black_F {};
-            class JCA_smg_UMP_VFG_black_F {};
-            class Aegis_SMG_Gepard_blk_F {};
-			class SMG_02_F {}; // Scorpion Evo 3
-            //SMG Mags
-            class Aegis_40Rnd_9x21_Gepard_Mag_F {};
-            class Aegis_40Rnd_9x21_Gepard_Green_Mag_F {};
-            class Aegis_20Rnd_9x21_Gepard_Mag_F {};
-            class JCA_25Rnd_45ACP_UMP_Mag {};
-            class JCA_25Rnd_45ACP_UMP_Yellow_Mag {};
-            class JCA_25Rnd_45ACP_UMP_Tracer_Yellow_Mag {};
-			class 30Rnd_9x21_Mag_SMG_02 {};
-			class 30Rnd_9x21_Mag_SMG_02_Tracer_Yellow {};
-        };
-    };
-    */
-    /*
 
     class Weapons_Primary_AKs: baseKit {
         class items {
             // AK74s
-			class Aegis_arifle_AK74_F {};
-			class Aegis_arifle_AK74_oak_F {};
-			class Aegis_arifle_AKM74_F {};
-			//AK74s with GL
-            class Aegis_arifle_AKM74_GL_F {};
-			class Aegis_arifle_AK74_GL_F {};
-			class Aegis_arifle_AK74_GL_oak_F {};
-			class 1Rnd_HE_Grenade_shell {};
-			class 1Rnd_SmokeRed_Grenade_shell {};
-			class 1Rnd_SmokePurple_Grenade_shell {};
-			class UGL_FlareRed_F {};
-			class UGL_FlareGreen_F {};
-			class ACE_40mm_Flare_white {};
-			class 1Rnd_Pellet_Grenade_shell_lxWS {};
-			//AKSUs
-            class arifle_AKSM_F {};
-			class arifle_AKSM_alt_F {};
-            class 30Rnd_545x39_Black_Mag_Yellow_F {};
-            class 30Rnd_545x39_Mag_F {};
-            class 30Rnd_545x39_Black_Mag_Tracer_Yellow_F {};
+			class sp_fwa_sig510_3 {};
+			class gm_akms_wud {};
+			class gm_mpikm72_brn {};
+			class gm_mpikm72_blk {};
+			class gm_mpikm72_prp {};
+			class gm_mpikms72_brn {};
+			class gm_mpikms72_blk {};
+			class gm_mpikms72_prp {};
+			class gm_mpikms72k_brn {};
+			class gm_mpikms72k_blk {};
+			class gm_mpikms72k_prp {};
+			class gm_30Rnd_762x39mm_B_57N231_mpikm_blk {};
+			class gm_30Rnd_762x39mm_B_T_57N231P_mpikm_blk {};
+			class gm_flashlightp2_wht_akhandguard_blu {};
+			
         };
     };
-    */
-
-    /*
-    class Weapons_Primary_Shotty: baseKit {
-        class items {
-	        class sgun_Mp153_black_F {};
-	        class 4Rnd_12Gauge_Pellets {};
-	        class 4Rnd_12Gauge_Slug {};
-        };
-    };
-    */
-
-    /*
-    class Weapons_Sidearms_Pistols: baseKit {
-        class items {
-
-	        class acc_flashlight_pistol {};
-	        class hgun_P07_F {};
-	        class hgun_G17_F {};
-	        class 16Rnd_9x21_Mag_v2 {};
-			class 17Rnd_9x19_Mag_RF {};
+    
 
 
-	        class hgun_Pistol_01_F {};
-	        class 10Rnd_9x21_Mag {};
-	        class hgun_Rook40_F {};
-	        class 17Rnd_9x21_Mag {};
-	        class hgun_G17_black_F {};
-	        class hgun_Glock19_RF {};
-        };
-    };
-    */
 
-    /*
-    class Weapons_Accessories: baseKit {
-        class items {
-            //flashlight 
-            class acc_flashlight {};
-	        //basic optics
-	        class optic_Holosight_smg_blk_F {};
-	        class optic_ACO_grn_desert_RF {};
-	        //class Aegis_optic_ACOG {};
-	        //class optic_Arco_blk_F {};
-	        class optic_ACO_grn {};
-	        class optic_Aco {};
-	        //class optic_Hamr {};
-	        class optic_Holosight_blk_F {};
-	        class optic_Holosight_arid_F {};
-	        //class optic_VRCO_RF {};
-	        class Aegis_optic_ICO {};
-	        class Aegis_optic_ICO_sand {};
-	        //class Aegis_optic_ROS {};
-	        class optic_r1_high_black_sand_lxWS {};
-	        class optic_r1_high_sand_lxWS {};
-	        class optic_r1_high_snake_lxWS {};
-	        class optic_r1_high_lxWS {};
-	        class optic_r1_low_lxWS {};
-	        class optic_r1_low_sand_lxWS {};
-	        class optic_r1_low_snake_lxWS {};
-	        class saber_light_lxWS {};
-	        class bipod_01_F_blk {};
-	        class optic_Aco_smg {};
-	        class Aegis_optic_ROS_SMG {};
-        };
-    };
-    */
-
-    /*
+    
     class Weapons_Throwables: baseKit {
         class items {
-            class ACE_CTS9 {};
-            class HandGrenade {};
-            class SmokeShell {};
-            class SmokeShellBlue {};
-            class SmokeShellGreen {};
-            class SmokeShellOrange {};
-            class SmokeShellPurple {};
-            class SmokeShellRed {};
-            class SmokeShellYellow {};
-            class MiniGrenade {};
-            class Aegis_HandFlare_Green {};
-            class Aegis_HandFlare_Red {};
-            class ACE_HandFlare_Green {};
-            class ACE_HandFlare_Yellow {};
-            class ACE_HandFlare_Red {};
-            class ACE_HandFlare_White {};
-            class Chemlight_yellow {};
-            class Chemlight_red {};
-            class Chemlight_blue {};
-            class Chemlight_green {};
-            class ACE_Chemlight_Orange {};
-            class ACE_Chemlight_White {};
-            class ACE_Chemlight_HiWhite {};
-            class ACE_Chemlight_UltraHiOrange {};
+            class gm_smokeshell_wht_dm25 {};
+            class gm_handgrenade_frag_m26 {};
+            
         };
     };
-    */
+    
 
     // ROLE KITS
-    /*
+    
     class EOD: baseKit {
         role = "ExplosiveSpecialist";
         class items {
-            class ACE_Clacker {};
-			class ACE_wirecutter {};
-			class Toolkit {};
-            class tsp_breach_popper_mag {};
-            class tsp_breach_popper_auto_mag {};
-			class ACE_DefusalKit {};
-
-            //class tsp_breach_silhouette_mag {};
-            //class tsp_breach_stick_mag {};
-			
-			//Minesweepers
-            class MineDetector {}; // Vanilla
-			class ACE_VMM3 {};
-			class ACE_VMH3 {};
-
-			//class ACE_Fortify
+            class gm_akm_pallad_wud {};
+            class gm_1rnd_40x47mm_he_ngo74 {};
+            class gm_explosive_petn_charge {};
+            
         };
     };
-    */
+    
 
-    /*
+    
     class MG: baseKit {
         role = "Machinegunner";
-        class items {
-            //RPK
-            //class 75Rnd_762x39_Mag_F {};
-            class Aegis_arifle_RPK74M_F {};
-            //class arifle_RPK_F {};
-            class Aegis_45Rnd_545x39_Mag_F {};
-            class Aegis_45Rnd_545x39_Mag_Tracer_F {};
+        class items {                  
+            class gm_hmgpkm_prp {};
+            class gm_100Rnd_762x54mmR_B_T_7t2_pk_grn {};
+            class vn_rpd {};
+            class vn_rpd_125_mag {};
+            class gm_lmgrpk_brn {};
+            class gm_lmgrpk_blk {};
+            class gm_lmgrpk_prp {};
+            class gm_rpk_wud {};
+            class gm_lmgk500_brn {};
+            class gm_lmgk500_blk {};
+            class gm_lmgk500_prp {};
+            class gm_lmgk500s_brn {};
+            class gm_lmgk500s_blk {};
+            class gm_lmgk500s_prp {};
+            class gm_75Rnd_762x39mm_B_57N231_mpikm_blk {};
+            class gm_75Rnd_762x39mm_B_T_57N231P_mpikm_blk {};
+            
         };
     };
-    */
-
-    /*
-    class AntiTank: baseKit {
-        role = "Anti-Tank";
+    
+    class AR: baseKit {
+        role = "Autorifleman";
         class items {
-            //RPG7
-            class launch_RPG7_F {};
-            class RPG7_F {};
-
-            //PSRL Fancy RPG
-            class launch_PSRL1_PWS_black_RF {};
-            class launch_PSRL1_PWS_olive_RF {};
-            class PSRL1_AT_RF {};
-            class PSRL1_FRAG_RF {};
-            class PSRL1_HE_RF {};
-            class PSRL1_HEAT_RF {};
-
-            //For later upgrade
-		    //class Aegis_launch_RPG7M_F {};
-
+            class gm_75Rnd_762x39mm_B_57N231_mpikm_blk {};
+            class gm_75Rnd_762x39mm_B_T_57N231P_mpikm_blk {};
+            class sp_fwa_acc_bipod_stgw57_forward {};
+            
         };
     };
-    */
 
-    /*
+        class AR: baseKit {
+        role = "AsstMG";
+        class items {
+            class gm_75Rnd_762x39mm_B_57N231_mpikm_blk {};
+            class gm_75Rnd_762x39mm_B_T_57N231P_mpikm_blk {};
+            class gm_100Rnd_762x54mmR_B_T_7t2_pk_grn {};
+            
+        };
+    };
+
+    
     class Marksman: baseKit {
         role = "Marksman";
         class items {
-            // SVD
-            class Aegis_srifle_SVD_f {};
-            class Aegis_srifle_SVD_blk_f {};
-            class 10Rnd_762x54_Mag {};
-            class Aegis_10Rnd_762x54_SVD_Red_Mag_F {};
-
-    		//ammo
-            class 10Rnd_556x45_AP_Stanag_red_RF {};
-            class 10Rnd_556x45_AP_Stanag_red_Tan_RF {};
-
-            //GreenMag
-            class greenmag_ammo_556x45_basic_60Rnd {};
-            class greenmag_ammo_556x45_basic_30Rnd {};
-
-    		//accessories
-            class optic_DMS {};
-            class optic_SOS {};
-			
-			//Utility
-			class ACE_Tripod {};
-			class ACE_RangeCard {};
-        };
+            class gm_mpikms72ksd_brn {};
+            class gm_mpikms72ksd_blk {};
+            class gm_mpikms72ksd_prp {};
+            class gm_30Rnd_762x39mm_BSD_57N231U_mpikm_blk {};
+            class gm_zfk4x25_blk {};
+            class gm_suppressor_pbs1_762mm_blk {};
+            
     };
-    */
 
-    /*
-    class UAV: baseKit {
-        role = "UAV";
-        class items {
- 
-			//EWAR Kit
-			class hgun_esd_01_F {};
-			class acc_esd_01_flashlight {};
-			class muzzle_antenna_01_f {};
-			class muzzle_antenna_02_f {};
-			class muzzle_antenna_03_f {};
-
-			//ACE Groundspike & Mast
-			class ACRE_VHF30108SPIKE {};
-			class ACRE_VHF30108 {};
-			class ACRE_VHF30108MAST {};
-			
-		    ////AR-2 Darter 
-            //class ION_UAV_01_backpack_lxWS {};
-
-		    ////GLX grenade launcher and ammo
-            // class glaunch_GLX_snake_lxWS {};
-            // class glaunch_GLX_lxWS {};
-            // class glaunch_GLX_tan_lxWS {};
-            // class 1Rnd_RC40_HE_shell_RF {};
-            // class 1Rnd_RC40_shell_RF {};
-            // class 1Rnd_RC40_SmokeBlue_shell_RF {};
-            // class 1Rnd_RC40_SmokeGreen_shell_RF {};
-            // class 1Rnd_RC40_SmokeOrange_shell_RF {};
-            // class 1Rnd_RC40_SmokeRed_shell_RF {};
-            // class 1Rnd_RC40_SmokeWhite_shell_RF {};
-		    
-            ////drone terminal
-            // class B_UavTerminal {};
-            // class ACE_UAVBattery {};
-		
-		    //LR radio
-            class ACRE_PRC148 {};
-        };
-    };
-    */
-
-    /*
+    
     class Leadership: baseKit {
         role = "Leadership";
         class items {
-            class optic_VRCO_RF {};
-            class optic_Hamr {};
-            class ItemcTab {};
-
-            //Laser Designator
-            class ACE_Yardage450 {};
-
-            class Laserdesignator {};
-            class LaserdesignatorGPS_01 {};
-            class Laserbatteries {};
+            class gm_watch_gub_f455_gm {};
+            class gm_watch_kosei_80_slv {};
+            class gm_watch_kosei_80_gold {};
+            class ItemMap {};
         };
     };
-    */
+    
 };

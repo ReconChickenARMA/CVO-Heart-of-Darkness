@@ -47,9 +47,13 @@ _helper attachTo [_truck, [0,3.8,-0.7]];
 
 
 // Trigger Message from Driver
-[CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "Thats it... the engine is dead - You have to walk from here!"] ], 85] call CBA_fnc_waitAndExecute;
-[CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "Dont worry my friend! It is not far anymore.<br/>You can see the church already!"] ], 95] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "Thats the end of the road...."] ], 80] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "The engine is dead."] ], 85] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "You will have to walk from here..."] ], 90] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "Dont worry my friend! It is not far anymore."] ], 95] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "You can see the church from here.."] ], 100] call CBA_fnc_waitAndExecute;
 [CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "You dont see it? Hah! Just its just down the road!"] ], 105] call CBA_fnc_waitAndExecute;
+[CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "I will meet you at the safehouse once you're done"] ], 110] call CBA_fnc_waitAndExecute;
 [CBA_fnc_globalEvent, ["cvo_common_fnc_subtitles", [ "Smuggler", "Good Luck!"] ], 115] call CBA_fnc_waitAndExecute;
 
 

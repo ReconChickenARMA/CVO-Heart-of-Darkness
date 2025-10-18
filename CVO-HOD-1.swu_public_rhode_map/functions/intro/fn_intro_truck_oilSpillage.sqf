@@ -29,9 +29,10 @@ private _oilSpillages = [
 ];
 
 
-private _obj = selectRandom _oilSpillages createVehicle [0,0,0];
+private _obj = createSimpleObject [selectRandom _oilSpillages, [0,0,0]];
 _obj setDir random 360;
 _obj setPos _pos;
+_obj setObjectScale random 1;
 
 
 _index = _index - 1;

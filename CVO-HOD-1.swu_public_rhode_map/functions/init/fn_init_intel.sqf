@@ -27,4 +27,5 @@ private _structuredString = "
     "Church",                       // Intel Group, nil for Default Group (Optional, nil for Default Group: "General")
     true                            // Remove Object once Picked up - (Optional - Default: true)
 ] call cvo_intel_fnc_createIntel;
-intel_1_church setObjectTexture [0,'#(rgb,512,512,3)text(1,1,"EraserRegular",0.1,"#ffffff","#000000","The red star will light the way...")'];
+
+intel_1_church setObjectTexture [0,'#(rgb,512,512,3)text(1,1,"EraserRegular",0.1,"#ffffff","#000000","The\nred\nstar\nwill\nlight\nthe\nway...")'];

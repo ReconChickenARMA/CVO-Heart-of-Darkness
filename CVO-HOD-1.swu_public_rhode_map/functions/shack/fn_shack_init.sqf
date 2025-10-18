@@ -6,7 +6,7 @@ private _state = {
     if (_target distance _player > 5) exitWith { ["You are to far away to deliver the equipment..."] call cba_fnc_notify; };
 
     [
-        20                                          // * 0: Total Time (in game "time" seconds) <NUMBER>
+        [20,1] select is3denPreview                 // * 0: Total Time (in game "time" seconds) <NUMBER>
         ,[]                                         // * 1: Arguments, passed to condition, fail and finish <ARRAY>
                                                     // * 2: On Finish: Code called or STRING raised as event. <CODE, STRING>
         ,{ missionNamespace setVariable ["trigger_shack_cutscene", true, true]; }
@@ -47,7 +47,7 @@ private _aceAction = [
 if !(isServer) exitWith {};
 
 // 0. Hide Shack Objects
-["shack_after", "HIDE_ON"] call cvo_common_fnc_layerObjects;
+// ["shack_after", "HIDE_ON"] call cvo_common_fnc_layerObjects;
 
 
 // 0. Get ShackLightsource Placeholder Position and store in Public GVAR

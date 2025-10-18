@@ -23,17 +23,17 @@ force cvo_arsenal_GreenMag_Loaded = true;
 force cvo_arsenal_ImmersionCigs_Loaded = true;
 
 force cvo_arsenal_BaseKit_Medical = true;
-force cvo_arsenal_BaseKit_Orientation = true;
+force cvo_arsenal_BaseKit_Orientation = false;
 force cvo_arsenal_BaseKit_Utility = true;
 
 force cvo_arsenal_BaseRoleKit_Machinegunner = true;
-force cvo_arsenal_BaseRoleKit_Marksman = true;
+force cvo_arsenal_BaseRoleKit_Marksman = false;
 force cvo_arsenal_BaseRoleKit_RTO = true;
 
 force cvo_arsenal_BaseRoleKit_Engineer = true;
 force cvo_arsenal_BaseRoleKit_AdvEngineer = true;
 
-force cvo_arsenal_BaseRoleKit_ExplosiveSpecialist = true;
+force cvo_arsenal_BaseRoleKit_ExplosiveSpecialist = false;
 force cvo_arsenal_BaseRoleKit_ExplosiveSpecialist_IEDD = true;
 
 force cvo_arsenal_BaseRoleKit_UAV = true;
@@ -43,7 +43,7 @@ force cvo_arsenal_BaseRoleKit_Medic = true;
 force cvo_arsenal_BaseRoleKit_Doctor = true;
 
 force cvo_arsenal_BaseRoleKit_Medic_suture = true;
-force cvo_arsenal_BaseRoleKit_ExplosiveSpecialist_convertFuses = true;
+force cvo_arsenal_BaseRoleKit_ExplosiveSpecialist_convertFuses = false;
 
 // CVO - Arsenal
 // Save Player Loadout and Restores it on Respawn

@@ -11,76 +11,7 @@ class cvo_arsenal_kits
 
     // Imports Base from configFile
     import baseKit from cvo_arsenal_kits;
-
-    //  MISCELLANEOUS
-    class ctab: baseKit {
-        class items {
-            class ItemAndroid {};
-            class ItemcTabHCam {};
-        };
-    };
-
-    // Examples from the AEW Campaigns
-    /*
-    class GreenMagStuff: baseKit {
-        addon_dependency = "greenmag_main";
-        class items {
-            // @ KYO - IDK if you edited those already or not - just comment out the entries you dont need.
-			//class greenmag_ammo_556x45_basic_60Rnd {};
-			//class greenmag_ammo_556x45_basic_30Rnd {};
-
-			class greenmag_ammo_762x51_basic_60Rnd {};
-			class greenmag_ammo_762x51_basic_30Rnd {};
-
-			class greenmag_ammo_545x39_basic_60Rnd {};
-			class greenmag_ammo_545x39_basic_30Rnd {};
-
-			class greenmag_ammo_762x39_basic_60Rnd {};
-			class greenmag_ammo_762x39_basic_30Rnd {};
-
-			class greenmag_ammo_9x21_basic_60Rnd {};
-			class greenmag_ammo_9x21_basic_30Rnd {};
-
-			class greenmag_ammo_45ACP_basic_30Rnd {};
-			class greenmag_ammo_45ACP_basic_60Rnd {};
-
-			class greenmag_ammo_762x54_basic_60Rnd {};
-			class greenmag_ammo_762x54_basic_30Rnd {};
-
-			class greenmag_item_speedloader {};
-        };
-    };
-    */
-    /*
-    class Rations: baseKit {
-        condition = "missionNamespace getVariable ['ace_field_rations_enabled', true]";
-        class items {
-	        class ACE_MRE_BeefStew {};
-	        class ACE_MRE_ChickenTikkaMasala {};
-	        class ACE_MRE_ChickenHerbDumplings {};
-	        class ACE_MRE_CreamChickenSoup {};
-	        class ACE_MRE_CreamTomatoSoup {};
-	        class ACE_MRE_LambCurry {};
-	        class ACE_MRE_MeatballsPasta {};
-	        class ACE_MRE_SteakVegetables {};
-        };
-    };
-    */
-    /*
-
-    class Binoculars: baseKit {
-        class items {
-            class Binocular {};
-
-            class Hate_Smartphone_HUD {};
-            class Nikon_DSLR_HUD {};
-            class Nikon_DSLR {};
-            class Camera_lxWS {};
-
-            //class ACE_Yardage450 {};
-        };
-    };
-    */
+ 
     
     class Immersion_Cigs: baseKit {
         addon_dependency = "cigs_core";
@@ -94,8 +25,7 @@ class cvo_arsenal_kits
             class cigs_pops_poppack {};
             class cigs_lucky_strike_cigpack {};
             class cigs_morley_cigpack {};
-            //class cigs_baja_blast_cigpack {};
-            //class cigs_crayons_crayonpack {};
+            
         };
     };
     
@@ -131,12 +61,6 @@ class cvo_arsenal_kits
             class gm_ge_uniform_pilot_commando_rolled_blk {};
             class gm_ge_uniform_pilot_commando_rolled_gry {};
             class gm_ge_uniform_pilot_commando_rolled_oli {};
-            class HoD_O_MPLB_FieldUniform_Olv {};
-            class HoD_O_MPLB_FieldUniform_Olv_Rolled {};
-            class HoD_O_MPLB_FieldUniform_OlvCbnLiz {};
-            class HoD_O_MPLB_FieldUniform_OlvCbnLiz_Rolled {};
-            class HoD_O_MPLB_FieldUniform_CbnLizOlv {};
-            class HoD_O_MPLB_FieldUniform_CbnLizOlv_Rolled {};
             
             
         };
@@ -153,37 +77,13 @@ class cvo_arsenal_kits
             class HoD_Equip_V_Chicom_Type56_Mix_03 {};
             class HoD_Equip_Vest_Rifleman_Brn {};
             class HoD_Equip_Vest_SMG_Brn {};
-            class vn_b_vest_sas_02 {};
-            class vn_b_vest_sas_01 {};
             class vn_b_vest_sog_01 {};
             class vn_b_vest_sog_04 {};
             
         };
     };
     
-    /*
-
-    class Base_Backpacks: baseKit {
-        class items {
-			class cvo_Kitbag_blk {};
-        	class cvo_LegStrapBag_black {};
-        	class B_LegStrapBag_coyote_F {};
-			class ace_gunbag_Tan {};
-        	class B_AssaultPack_cbr {};
-        	class B_AssaultPackSpec_cbr {};
-        	class B_Carryall_cbr {};
-			class B_Carryall_blk {};
-			class B_Carryall_green_F {};
-        	class B_FieldPack_cbr {};
-			class B_FieldPack_blk {};
-			class B_FieldPack_oli {};
-			class B_FieldPack_khk {};
-        	class B_Kitbag_cbr {};
-        	class B_Kitbag_rgr {};
-        	//class Aegis_B_patrolBackpack_cbr_F {};
-        };
-    };
-    */
+    
     
 
     class Base_Headgear: baseKit {
@@ -245,6 +145,7 @@ class cvo_arsenal_kits
             // AK74s
 			class sp_fwa_sig510_3 {};
 			class gm_akms_wud {};
+			class gm_akm_wud {};
 			class gm_mpikm72_brn {};
 			class gm_mpikm72_blk {};
 			class gm_mpikm72_prp {};
@@ -282,7 +183,7 @@ class cvo_arsenal_kits
             class gm_akm_pallad_wud {};
             class gm_1rnd_40x47mm_he_ngo74 {};
             class gm_explosive_petn_charge {};
-            
+            class vn_b_vest_sas_02 {};
         };
     };
     
@@ -321,7 +222,7 @@ class cvo_arsenal_kits
         };
     };
 
-        class AR: baseKit {
+        class AsstMG: baseKit {
         role = "AsstMG";
         class items {
             class gm_75Rnd_762x39mm_B_57N231_mpikm_blk {};
@@ -341,7 +242,7 @@ class cvo_arsenal_kits
             class gm_30Rnd_762x39mm_BSD_57N231U_mpikm_blk {};
             class gm_zfk4x25_blk {};
             class gm_suppressor_pbs1_762mm_blk {};
-            
+        };  
     };
 
     
@@ -351,7 +252,17 @@ class cvo_arsenal_kits
             class gm_watch_gub_f455_gm {};
             class gm_watch_kosei_80_slv {};
             class gm_watch_kosei_80_gold {};
+            class gm_ferod16_des {};
+            class gm_ferod16_oli {};
             class ItemMap {};
+        };
+    };
+
+    class Medic: baseKit {
+        role = "Medic";
+        class items {
+            class gm_dk_army_backpack_73_oli {};
+            class gm_ge_army_backpack_80_oli {};
         };
     };
     
